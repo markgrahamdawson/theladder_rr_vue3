@@ -15,7 +15,7 @@
 
   const story = await useAsyncStoryblok('news',
     {
-      version: useRoute().query._storyblok? "draft" : "published",
+      version: useRoute().query._storyblok ? "draft" : "published",
       resolve_relations: resolveRelations,
     },
     {
