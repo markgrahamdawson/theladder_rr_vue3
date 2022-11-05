@@ -30,6 +30,7 @@
       <div class="title font-amatic font-semibold text-4xl title underline py-2">
         Welcome to the ladder
       </div>
+      <!-- <StoryblokComponent v-if="story" :blok="story.content" /> -->
       <div class="font-josan text-l font-bold py-2 italic">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </div>
@@ -43,7 +44,10 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-
+// import { useStoryApi } from '@storyblok/nuxt/composables'
+// const story = await useAsyncStoryblok('news', { version: 'draft' })
+// const storyapi = useStoryApi();
+// const { data } = await storyapi.get("cdn/stories", { version: "draft" });
 
 interface postsInterface {
   date: string

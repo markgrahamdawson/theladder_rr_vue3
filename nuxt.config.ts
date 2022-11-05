@@ -8,8 +8,12 @@ export default defineNuxtConfig({
   },
   buildModules: [
     // Simple usage
-    '@nuxtjs/google-fonts',
+    // '@nuxtjs/google-fonts',
   ],
+  publicRuntimeConfig: {
+    apiToken: process.env.STORYBLOK_API_KEY,
+  },
+  modules: [['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_API_KEY }]],
   // googleFonts: {
   //   families: {
   //     'Permanent Marker': true,
