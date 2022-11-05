@@ -6,6 +6,6 @@
   import { ref } from 'vue';
   const route = useRoute()
   const story = await useStoryblok(`newsarticles/${route.params.slug}`, {
-    version: "draft",
+    version: useRoute().query._storyblok? "draft" : "published",
   })
 </script>
