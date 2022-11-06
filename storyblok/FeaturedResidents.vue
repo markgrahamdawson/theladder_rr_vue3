@@ -1,21 +1,38 @@
 <template> 
   <div v-editable="blok" class="p-6 w-full">
     <div class="font-amatic font-semibold text-4xl title underline pb-8">
-      Featured residents
+      Residents
     </div>
-    <div v-for="post in blok.residents" :key="post._uid"
+    <div v-for="(post, index) in blok.residents" :key="post._uid"
+    class="p-8"
       >
       <NuxtLink :to="{name: 'residentsdetail-slug', params: {slug: post.slug}}">
-        <div class="flex">
-          <div class="w-60">
-              <div class="p-2 font-semibold"> {{post.content.title}} </div>
-            <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
-              :alt ="post.content.thumbnail?.alt" class="p-2"/>
+        
+          <div v-if="index%2">
+            <div class="flex">
+              <div class="w-60">
+                  <div class="p-2 font-semibold"> {{post.content.title}} </div>
+                <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
+                  :alt ="post.content.thumbnail?.alt" class="p-2"/>
+              </div>
+              <div class="w-full p-8 center">
+                {{post.content.content}}
+              </div>
+            </div>
           </div>
-          <div class="w-full p-8 center">
-            {{post.content.content}}
+          <div v-else>
+            <div class="flex">
+              <div class="w-full p-8 center">
+                {{post.content.content}}
+              </div>
+              <div class="w-60">
+                {{index}}
+                  <div class="p-2 font-semibold"> {{post.content.title}} </div>
+                <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
+                  :alt ="post.content.thumbnail?.alt" class="p-2"/>
+              </div>
+            </div>
           </div>
-        </div>
       </NuxtLink>
 
       

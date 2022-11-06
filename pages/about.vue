@@ -2,9 +2,9 @@
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
   <div class="min-h-screen flex">
     
-    <div class="font-josan p-6 w-1/3">
+    <div class="font-josan p-6">
       <p class="m-2">
-        Redruth Former Library qwerty
+        Redruth Former Library
       </p>
       <p class="m-2">
         At the beginning of the pandemic Redruth Library, an imposing granite building in the centre of the town, closed its doors for the last time. Hoardings went up. Kids threw stones at where they were once read bedtime stories. The roof caved into the space where Cornwall’s historic archives were stored, plaster and mould splattered over a bust of Cornwall’s most famous philanthropist Passmore Edwards. 

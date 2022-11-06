@@ -1,7 +1,7 @@
 <template>
   <div v-editable="blok" class="p-6 w-full">
     <div class="">
-      <NuxtLink to="/residents" >Back to residents</NuxtLink>
+      <NuxtLink to="/residents" >Residents</NuxtLink>
       <div class=" flex justify-center">
         <img :src="blok.thumbnail?.filename+'/m/400x0' || 'https://picsum.photos/300/175'" :alt="blok.image?.alt" 
         class=""/>

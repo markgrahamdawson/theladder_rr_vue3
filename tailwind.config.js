@@ -18,6 +18,16 @@ module.exports = {
     //   josan: ['Josefin Sans'],
     //   amatic: ['Amatic SC'],
     // },
+    fontFamily: {
+      // change default tailwind font (sans) to poppins as is by far the most common font family
+      // sans: ['Amatic', 'Arial', 'sans-serif'],
+      // inter: ['Inter', 'sans-serif']
+      "amatic": "amatic",
+      "permark": "permark",
+      "josan": "josan",
+      "permark": "permark",
+      "lbtk": "lbtk"
+    },
     extend: {
       colors: {
         transparent: 'transparent',

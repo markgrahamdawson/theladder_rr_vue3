@@ -41,3 +41,10 @@ npm run preview
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
 # theladder_rr_vue3
+
+
+Open terinal
+npm run dev
+
+open new terminal 
+local-ssl-proxy --source 3010 --target 3001 --cert localhost.pem --key localhost-key.pem
