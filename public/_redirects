@@ -1,2 +1,3 @@
 /newsarticles _storyblok=:id / 200
 /residentsdetail _storyblok=:id / 200
+/eventsdetail _storyblok=:id / 200
