@@ -4,7 +4,7 @@
       Residents
     </div>
     <div v-for="(post, index) in blok.residents" :key="post._uid"
-    class="p-8"
+    class="p-8 font-josan"
       >
       <NuxtLink :to="{name: 'residentsdetail-slug', params: {slug: post.slug}}">
         
@@ -26,7 +26,6 @@
                 {{post.content.content}}
               </div>
               <div class="w-60">
-                {{index}}
                   <div class="p-2 font-semibold"> {{post.content.title}} </div>
                 <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
                   :alt ="post.content.thumbnail?.alt" class="p-2"/>

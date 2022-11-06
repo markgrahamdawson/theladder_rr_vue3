@@ -6,7 +6,7 @@
     <div v-for="post in blok.news" :key="post._uid"
       >
       <NuxtLink :to="{name: 'newsarticles-slug', params: {slug: post.slug}}">
-        <div class="flex">
+        <div class="flex font-josan">
           <div class="w-60">
               <div class="p-2 font-semibold"> {{post.content.title}} </div>
             <img :src="post.content.thumbnail?.filename+'/m/300x0'" 

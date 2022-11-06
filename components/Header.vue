@@ -42,15 +42,15 @@
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               
-              <NuxtLink to="/news" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">News</NuxtLink>
+              <NuxtLink to="/news" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">News</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/about" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About</NuxtLink>
+              <NuxtLink to="/about" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/residents" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Residents</NuxtLink>
+              <NuxtLink to="/residents" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Residents</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/events" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events</NuxtLink>
+              <NuxtLink to="/events" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/contacts" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Contact</NuxtLink>
+              <NuxtLink to="/contacts" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Contact</NuxtLink>
 
             </div>
           </div>

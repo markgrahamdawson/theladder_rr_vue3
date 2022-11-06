@@ -3,7 +3,7 @@
   <div class="min-h-screen flex">
     
     <div class="font-josan p-6">
-      <p class="m-2">
+      <p class="m-2 font-bold">
         Redruth Former Library
       </p>
       <p class="m-2">
