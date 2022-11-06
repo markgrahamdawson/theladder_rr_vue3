@@ -1,10 +1,9 @@
 <template>
   <div v-editable="blok" class="p-6 w-full">
     <div class="">
-      123
-      <NuxtLink to="/news" >Back to news</NuxtLink>
+      <NuxtLink to="/residents" >Back to residents</NuxtLink>
       <div class=" flex justify-center">
-        <img :src="blok.thumbnail?.filename+'/m/800x0' || 'https://picsum.photos/300/175'" :alt="blok.image?.alt" 
+        <img :src="blok.thumbnail?.filename+'/m/400x0' || 'https://picsum.photos/300/175'" :alt="blok.image?.alt" 
         class=""/>
       </div>
       <div class="px-16 pb-4 pt-8 font-semibold">

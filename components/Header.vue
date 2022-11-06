@@ -46,6 +46,8 @@
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
               <NuxtLink to="/about" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
+              <NuxtLink to="/residents" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Residents</NuxtLink>
+              <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
               <NuxtLink to="/events" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
               <NuxtLink to="/contacts" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Contact</NuxtLink>
@@ -62,6 +64,9 @@
               </div>
               <div>
                 <NuxtLink to="/about" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About</NuxtLink>
+              </div>
+              <div>
+                <NuxtLink to="/residents" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Residents</NuxtLink>
               </div>
               <div>
                 <NuxtLink to="/events" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events</NuxtLink>
