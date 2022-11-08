@@ -18,6 +18,7 @@
           </div>
         </div> 
       </div>
+      <Radio class = "w-40 h-40"/>
     </div>
 
     
@@ -44,6 +45,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+// import Ladder from '~/components/icons/Ladder.vue'
+import Radio from '~/components/icons/Radio.vue'
 // import { useStoryApi } from '@storyblok/nuxt/composables'
 // const story = await useAsyncStoryblok('news', { version: 'draft' })
 // const storyapi = useStoryApi();

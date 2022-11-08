@@ -2,6 +2,7 @@
   <div class="min-h-screen bg-offwhite">
     <Header />
     <slot></slot>
+    <Scatter />
   </div>
 </template>
 

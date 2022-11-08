@@ -37,6 +37,7 @@ module.exports = {
         teal: '#4da4a4',
         richblack: '#13100d',
         brightyellow: '#FFEE00',
+        warmred: '#E94F35'
       }
     },
   },

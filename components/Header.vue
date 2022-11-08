@@ -29,8 +29,8 @@
           </button>
         </div>
         
-
-        <div class="flex sm:block items-center justify-center sm:items-stretch sm:justify-start py-8">
+      <div class="flex w-full">
+        <div class="z-10 flex sm:block items-center justify-center sm:items-stretch sm:justify-start py-8 relative bg-cover">
           <!-- <div class="flex flex-shrink-0 items-center">
             <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
             <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
@@ -42,15 +42,15 @@
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               
-              <NuxtLink to="/news" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">News</NuxtLink>
+              <NuxtLink to="/news" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">News</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/about" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About</NuxtLink>
+              <NuxtLink to="/about" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/residents" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Residents</NuxtLink>
+              <NuxtLink to="/residents" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Residents</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/events" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events</NuxtLink>
+              <NuxtLink to="/events" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events</NuxtLink>
               <div class="font-amatic text-2xl font-semibold text-black py-2">|</div>
-              <NuxtLink to="/contacts" class="font-amatic text-3xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Contact</NuxtLink>
+              <NuxtLink to="/contacts" class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Contact</NuxtLink>
 
             </div>
           </div>
@@ -79,6 +79,8 @@
 
 
         </div>
+        <div class="hidden lg:block pl-32 -ml-32 pr-32 -mr-32 bg-[url('~/assets/headersnake.svg')] bg-auto bg-no-repeat bg-center w-full h-54 z-0"> </div>
+      </div>
       </div>
     </div>
 
@@ -86,5 +88,4 @@
   </template>
   
   <script lang="ts" setup>
-  import Ladder from '~/components/icons/Ladder.vue'
   </script>
