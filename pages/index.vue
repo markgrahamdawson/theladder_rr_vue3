@@ -23,7 +23,7 @@
 
     
     
-    <div class="px-10 pb-10 w-2/3 ">
+    <div class="px-10 pb-10 sm:w-2/3">
       <!-- <div class="absolute"> -->
       <div>
         <img src="~/assets/passmoreedwardslibrary.jpeg" alt="The Ladder Logo" class="object-cover w-full mb-8" />
