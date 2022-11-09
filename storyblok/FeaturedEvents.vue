@@ -20,7 +20,7 @@
     </div> -->
 
       <div class="p-6">
-        <div class="grid grid-cols-4 gap-4">
+        <div class="sm:grid sm:grid-cols-3 sm:gap-8">
           <div v-for="post in blok.events" :key="post._uid"
             class="py-2">
             <NuxtLink :to="{name: 'eventsdetail-slug', params: {slug: post.slug}}">
