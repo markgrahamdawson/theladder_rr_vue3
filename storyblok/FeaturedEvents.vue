@@ -20,11 +20,11 @@
     </div> -->
 
       <div class="p-6">
-        <div class="sm:grid sm:grid-cols-3 sm:gap-8">
+        <div class="md:grid md:grid-cols-3 md:gap-8">
           <div v-for="post in blok.events" :key="post._uid"
             class="py-2">
             <NuxtLink :to="{name: 'eventsdetail-slug', params: {slug: post.slug}}">
-              <div class="">
+              <div class="mb-8 sm:block">
                 <div class="font-josan text-teal">
                   <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
                 :alt ="post.content.thumbnail?.alt" class="p-2"/>
