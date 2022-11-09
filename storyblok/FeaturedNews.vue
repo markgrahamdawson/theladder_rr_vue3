@@ -12,7 +12,7 @@
             <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
               :alt ="post.content.thumbnail?.alt" class="p-2"/>
           </div>
-          <div class="w-full p-8 center">
+          <div class="w-full p-8 center m-auto">
             {{post.content.content}}
           </div>
         </div>
