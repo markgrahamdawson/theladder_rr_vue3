@@ -1,9 +1,9 @@
 <template>
   <div class="mx-auto sm:block max-w-7xl px-2 sm:px-6 lg:px-8">
-  <div class="min-h-screen flex">
+  <div class="min-h-screen flex ">
     
     <div class="hidden sm:block p-6 w-1/3">
-      <div>
+      <!-- <div class="bg-[url('~/assets/scatter-background.svg')] bg-auto bg-no-repeat bg-center"> -->
         <div class="title font-amatic font-semibold text-4xl title underline py-2">
           Recent posts
         </div>
@@ -17,13 +17,13 @@
             {{post.text}}
           </div>
         </div> 
-      </div>
-      <Radio class = "w-40 h-40"/>
+      <!-- </div> -->
+      <Radio class = "opacity-60 w-40 h-40"/>
     </div>
 
     
     
-    <div class="px-10 pb-10 w-2/3">
+    <div class="px-10 pb-10 w-2/3 ">
       <!-- <div class="absolute"> -->
       <div>
         <img src="~/assets/passmoreedwardslibrary.jpeg" alt="The Ladder Logo" class="object-cover w-full mb-8" />

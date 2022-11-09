@@ -1,12 +1,11 @@
 <template>
-  <div class="min-h-screen bg-offwhite">
+  <div class="min-h-screen bg-offwhite bg-[url('~/assets/scatter-background.svg')] bg-no-repeat">
     <Header />
+    <div class="bg-[url('~/assets/scatter-background.svg')] bg-auto bg-no-repeat">
     <slot></slot>
-    <Scatter />
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 </script>
-
-<style lang="css" scoped></style>
