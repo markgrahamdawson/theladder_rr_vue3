@@ -1,13 +1,13 @@
 <template>
-  <div class="min-h-screen bg-offwhite bg-[url('~/assets/scatter-background.svg')] bg-no-repeat">
+  <div class="min-h-screen bg-offwhite">
     <Header />
-    <div class="bg-[url('~/assets/scatter-background.svg')] bg-auto bg-no-repeat">
-    <!-- <div class="flex">
-      <div class="bg-[url('~/assets/scatter-background.svg')] bg-auto bg-no-repeat"></div>
-      <div class="bg-[url('~/assets/scatter-background.svg')] bg-auto bg-no-repeat"></div>
-    </div> -->
-    <slot></slot>
-    </div>
+    <!-- <div class="bg-[url('~/assets/scatter-background.svg')] bg-auto bg-no-repeat w-full"> -->
+      <div class="bg-[url('~/assets/scatter-background-left.svg')] bg-auto bg-no-repeat w-full">
+        <div class="bg-[url('~/assets/scatter-background-right.svg')] bg-auto bg-no-repeat w-full">
+          <slot></slot>
+        </div>
+      </div>
+    <!-- </div> -->
   </div>
 </template>
 
