@@ -3,21 +3,6 @@
     <div class="font-amatic font-semibold text-4xl title underline pb-8">
       Whats on
     </div>
-    <!-- <div v-for="post in blok.events" :key="post._uid"
-      >
-      <NuxtLink :to="{name: 'eventsdetail-slug', params: {slug: post.slug}}">
-        <div class="flex">
-          <div class="w-60">
-              <div class="p-2 font-semibold"> {{post.content.title}} </div>
-            <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
-              :alt ="post.content.thumbnail?.alt" class="p-2"/>
-          </div>
-          <div class="w-full p-8 center">
-            {{post.content.content}}
-          </div>
-        </div>
-      </NuxtLink>
-    </div> -->
 
       <div class="p-6">
         <div class="md:grid md:grid-cols-3 md:gap-8">

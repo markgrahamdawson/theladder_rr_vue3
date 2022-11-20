@@ -3,7 +3,6 @@
     <div class="min-h-screen p-16">
       
       <StoryblokComponent v-if="story" :blok="story.content"></StoryblokComponent>
-  
     </div>
   </div>
   </template>
@@ -23,30 +22,6 @@
     }
   )
 
-  
-  interface postsInterface {
-    date: string
-    text: string
-  }
-  
-  const posts: postsInterface[] = [
-    {
-      date: '17 Jan',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid...'
-    },
-    {
-      date: '17 Jan',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid...'
-    },
-    {
-      date: '17 Jan',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid...'
-    },
-    {
-      date: '17 Jan',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid...'
-    }
-  ]
   
   </script>
   

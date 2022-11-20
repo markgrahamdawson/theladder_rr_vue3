@@ -4,6 +4,7 @@
     
     <div class="hidden sm:block p-6 w-1/3">
       <!-- <div class="bg-[url('~/assets/scatter-background.svg')] bg-auto bg-no-repeat bg-center"> -->
+      <!-- <div class="bg-[url('~/assets/scatter-background-left.svg')] bg-auto bg-no-repeat w-full"> -->
         <div class="title font-amatic font-semibold text-4xl title underline py-2">
           Recent posts
         </div>
