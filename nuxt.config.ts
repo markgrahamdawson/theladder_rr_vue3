@@ -12,8 +12,14 @@ export default defineNuxtConfig({
   ],
   publicRuntimeConfig: {
     apiToken: process.env.STORYBLOK_API_KEY,
+    FIREBASE_API_KEY: process.env.FIREBASE_API_KEY
+  },
+  privateRuntimeConfig: {
+    apiToken: process.env.STORYBLOK_API_KEY,
+    FIREBASE_API_KEY: process.env.FIREBASE_API_KEY
   },
   modules: [['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_API_KEY }]],
+  plugins: [{ src: '~/plugins/firebaseAuth', ssr: false, mode: 'client' }],
   // googleFonts: {
   //   families: {
   //     'Permanent Marker': true,
