@@ -108,10 +108,20 @@
             class="hidden lg:block pl-28 -ml-28 bg-[url('~/assets/headersnakespraycrop2.svg')] bg-auto bg-no-repeat bg-center w-full h-54 z-0">
           </div>
           <div class="mt-8">
-            <button class="button" @click="signIn"> Sign in</button>
-            <button class="button" @click="signOut"> Sign out</button>
+            <button class="button" @click="signIn" v-if="!firebaseUser"> Sign in</button>
+            <button class="button" @click="signOut" v-if="firebaseUser"> Sign out</button>
           </div>
-          <pre>{{ credentials }}</pre>
+          <div v-if="firebaseUser">
+            <client-only>
+              <pre>{{ firebaseUser }}</pre>
+            </client-only>
+          </div>
+          <div v-else>
+            User Signed Out
+          </div>
+          <p>
+            <NuxtLink to="/secret">Go to secret page</NuxtLink>
+          </p>
         </div>
       </div>
     </div>
@@ -121,6 +131,12 @@
   
 <script lang="ts" setup>
 
+definePageMeta({
+  middleware: ["auth"]
+  // or middleware: 'auth'
+})
+
+const firebaseUser = useFirebaseUser();
 const credentials = ref();
 
 const signIn = async () => {
