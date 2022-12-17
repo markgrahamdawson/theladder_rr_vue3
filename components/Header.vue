@@ -107,7 +107,30 @@
           <div
             class="hidden lg:block pl-28 -ml-28 bg-[url('~/assets/headersnakespraycrop2.svg')] bg-auto bg-no-repeat bg-center w-full h-54 z-0">
           </div>
-          <div class="mt-8">
+          <div class="fixed top-0 right-0 w-30 h-30 pt-8 pr-32 text-lg">
+            <div v-if="!firebaseUser" class="flex">
+              <div>
+                <IconsUser class="stroke-slate-500" />
+              </div>
+              <div>
+                <NuxtLink to="/firebase" class="pl-2">Sign In</NuxtLink>
+              </div>
+            </div>
+            <div v-else>
+              <div class="flex">
+                <div class="rounded-full bg-offwhite">
+                  <IconsUser />
+                </div>
+                <div>
+                  <NuxtLink to="/account" class="pl-2">My account</NuxtLink>
+                </div>
+              </div>
+              <div class="pt-2 text-center">
+                <button @click="signOutUser">Sign Out</button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mt-8">
             <button class="button" @click="signIn" v-if="!firebaseUser"> Sign in</button>
             <button class="button" @click="signOut" v-if="firebaseUser"> Sign out</button>
           </div>
@@ -121,7 +144,7 @@
           </div>
           <p>
             <NuxtLink to="/secret">Go to secret page</NuxtLink>
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -130,25 +153,21 @@
 </template>
   
 <script lang="ts" setup>
+import { signOutUser } from "../composables/useFirebase";
 
-definePageMeta({
-  middleware: ["auth"]
-  // or middleware: 'auth'
-})
+// definePageMeta({
+//   middleware: ["auth"]
+//   // or middleware: 'auth'
+// })
 
 const firebaseUser = useFirebaseUser();
 const credentials = ref();
 
-const signIn = async () => {
-  const email = "markgrahamdawson+1@gmail.com"
-  const password = '123456'
-  credentials.value = await signInUser(email, password)
-  console.log("Credentials:", credentials)
-}
-
-const signOut = async () => {
-  credentials.value = await signOutUser();
-  console.log("result:", result);
-}
+// const signIn = async () => {
+//   const email = "markgrahamdawson+1@gmail.com"
+//   const password = '123456'
+//   credentials.value = await signInUser(email, password)
+//   console.log("Credentials:", credentials)
+// }
 
 </script>
