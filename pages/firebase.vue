@@ -30,6 +30,7 @@
   
 <script setup>
 import { signOutUser } from "../composables/useFirebase";
+
 const registerForm = ref({ email: "", password: "" });
 const signinForm = ref({ email: "", password: "" });
 const firebaseUser = useFirebaseUser();
@@ -52,6 +53,7 @@ const register = async () => {
     }, 3000);
   }
 };
+
 </script>
   
 <style>
