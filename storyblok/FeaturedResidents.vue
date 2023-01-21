@@ -1,6 +1,6 @@
 <template> 
   <div v-editable="blok" class="p-6 w-full">
-    <div class="font-amatic font-semibold text-4xl title underline pb-8">
+    <div class="font-amatic font-semibold text-4xl title ladder-underline-small mb-8">
       Residents
     </div>
     <div v-for="(post, index) in blok.residents" :key="post._uid"

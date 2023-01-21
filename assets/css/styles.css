@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 
+
+@layer base {
+    .ladder-underline {
+        background-image: url('~/assets/underline.svg');
+        background-position: 0 110%;
+        background-repeat: no-repeat;
+        background-size: auto 0.75rem;
+    }
+    .ladder-underline-small {
+        background-image: url('~/assets/underlinesmall.svg');
+        background-position: 0 110%;
+        background-repeat: no-repeat;
+        background-size: auto 0.75rem;
+    }
+}
+
 @font-face {
     font-family: 'amatic';
     font-style: normal;
