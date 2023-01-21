@@ -26,7 +26,7 @@
               {{ contentItem.text }}
             </div>
           </div>
-          <img :src="contentItem.image" alt="The Ladder Logo" class="h-full w-2/3 object-cover"  />
+          <img :src="useAsset(contentItem.image)" alt="The Ladder Logo" class="h-full w-2/3 object-cover"  />
         </div>       
       </div>
     </div>
@@ -63,6 +63,18 @@ const props = defineProps({
     type: Array as PropType<SlidingContentCardContent[]>
   }
 })
+
+
+// function to get images working
+// https://github.com/nuxt/nuxt/issues/14766
+function useAsset(path: string): string {
+  const assets = import.meta.glob('~/assets/**/*', {
+    eager: true,
+    import: 'default',
+  })
+  // @ts-expect-error: wrong type info
+  return assets['/assets/' + path]
+}
 
 const selectedSlide = ref<number>(0)
 const timeout = 20000

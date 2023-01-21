@@ -61,22 +61,22 @@ const slidingCardContent: SlidingContentCardContent[] = [
   {
     title: 'News',
     text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
-    image: '_nuxt/assets/headersnakespray.jpeg'
+    image: 'passmoreedwardslibrary.jpeg'
   },
   {
     title: 'About',
     text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
-    image: '_nuxt/assets/passmoreedwardslibrary.jpeg'
+    image: 'passmoreedwardslibrary.jpeg'
   },
   {
     title: 'Events',
     text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
-    image: '_nuxt/assets/passmoreedwardslibrary.jpeg'
+    image: 'passmoreedwardslibrary.jpeg'
   },
   {
     title: 'Residents',
     text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
-    image: '_nuxt/assets/passmoreedwardslibrary.jpeg'
+    image: 'passmoreedwardslibrary.jpeg'
   }
 ]
 
