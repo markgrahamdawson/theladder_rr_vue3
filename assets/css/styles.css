@@ -19,6 +19,12 @@
     }
 }
 
+@layer utilities {
+    .clip-your-needful-style {
+        clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
+    }
+}
+
 @font-face {
     font-family: 'amatic';
     font-style: normal;
