@@ -36,8 +36,8 @@
           <button
             class="rounded-full"
             :class="{
-              'bg-primary w-3 h-3': selectedSlide === index,
-              'bg-white w-2.5 h-2.5 border': selectedSlide !== index
+              'bg-primary w-3 h-3 bg-warmred border': selectedSlide === index,
+              'bg-white w-2.5 h-2.5 border bg-brightyellow border-gray-400': selectedSlide !== index
             }"
             @click="selectSlide(index)"
           ></button>
