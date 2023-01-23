@@ -1,10 +1,10 @@
 <template>
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-  <div class="min-h-screen flex">
+  <div class="mx-auto max-w-7xl bg-[url('~/assets/ladder-drops-black.svg')] bg-auto">
+  <div class="min-h-screen flex items-center justify-center">
 
     
     
-    <div class="font-josan mt-10 px-10 pb-10 w-2/3">
+    <div class="font-permark bg-offwhite p-8">
       <p>Redruth Former Library Cic,</p>
       <p>Clinton Rd,</p>
       <p>Redruth, Cornwall,</p>
