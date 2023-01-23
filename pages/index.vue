@@ -29,8 +29,8 @@
       <div class="h-2/3 w-full flex items-center justify-center hidden md:block">
         <SlidingContentCard :content="slidingCardContent" />
       </div>
-      <div class="h-1/3 w-full pt-8 md:hidden">
-        <div class="h-full w-full flex items-center justify-center">
+      <div class=" w-full pt-8 md:hidden">
+        <div class="w-full flex items-center justify-center">
           <img src="~/assets/passmoreedwardslibrary.jpeg" alt="The Ladder Logo" class="h-1/3 object-cover"  />
         </div>
       </div>
