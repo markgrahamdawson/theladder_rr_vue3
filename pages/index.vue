@@ -65,23 +65,23 @@ import SlidingContentCard, { SlidingContentCardContent } from '~/components/Slid
 const slidingCardContent: SlidingContentCardContent[] = [
   {
     title: 'News',
-    text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
-    image: 'passmoreedwardslibrary.jpeg'
+    text: 'This year there is lots going on at the ladder as we work on building restoration, welcome our first residents and organise fantastic events. Keep up to date with everything thats going on by checking out our recent news.',
+    image: 'newsImage.png'
   },
   {
     title: 'About',
-    text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
+    text: 'In 1894 Passmore Edwards built the library for the people of Redruth. In 2022 Rift theatre company took on that legacy to build an arts and culture hub. Find out more...',
     image: 'passmoreedwardslibrary.jpeg'
   },
   {
     title: 'Events',
-    text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
-    image: 'passmoreedwardslibrary.jpeg'
+    text: 'RIFT Excursions Limited tell stories without boundaries. Experts in immersive, experiential and site-specific theatre-making, events and performances. Check out the schedule for all events here... ',
+    image: 'bunkerCab.png'
   },
   {
     title: 'Residents',
-    text: 'You don’t always need to upload names and email addresses to invite people to complete a survey, you can just share that survey’s public URL from the cohort management screen.',
-    image: 'passmoreedwardslibrary.jpeg'
+    text: 'We are home to a wide range of great enterprises including nurseries, immersive storytelling, catering and community gardening. For a list of all our residents and contact details see our residents listings.',
+    image: 'writtersBlockOpeningDay2.png'
   }
 ]
 
