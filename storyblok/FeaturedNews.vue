@@ -5,6 +5,7 @@
     </div>
     <!-- {{activeNews}} -->
     <div class="flex">
+      
       <div v-if="screenWidth>768" class="w-1/3 pt-8">
         <div v-for="(post, index) in blok.news" :key="post._uid" class="ladder-underline pb-2">
           <!-- <NuxtLink :to="{name: 'newsarticles-slug', params: {slug: post.slug}}"> -->
@@ -12,7 +13,7 @@
             @mouseover="hover = index"
             @mouseleave="hover = null"
             class="relative font-josan mb-6">
-              <div class=" absolute bottom-0 left-0 -mb-8 h-16 w-16 bg-[url('~/assets/eye-black-INKY.svg')] bg-auto bg-no-repeat bg-center z-0"
+              <div class=" absolute bottom-0 left-0 -mb-8 h-16 w-16 bg-auto bg-no-repeat bg-center z-0"
               :class="index === hover ? `bg-[url('~/assets/eye-warmred-INKY.svg')]` : `bg-[url('~/assets/eye-black-INKY.svg')]`"></div>
               <div class="relative text-xl font-permark font-semibold z-40"> {{post.content.title}} </div>
               <div class="relative z-40">
