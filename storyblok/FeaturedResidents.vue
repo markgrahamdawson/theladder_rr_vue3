@@ -17,6 +17,7 @@
               </div>
               <div class="hidden sm:block w-full p-8 center text-left m-auto">
                 {{post.content.content}}
+                <div class="h-20 -mt-8 w-full m-auto bg-[url('~/assets/line1-black.svg')] bg-auto bg-no-repeat"></div>
               </div>
             </div>
           </div>
@@ -24,6 +25,7 @@
             <div class="sm:flex">
               <div class="hidden sm:block w-full p-8 center text-right m-auto">
                 {{post.content.content}}
+              <div class="h-20 -mt-8 w-full m-auto bg-[url('~/assets/line1-black.svg')] bg-auto bg-no-repeat"></div>
               </div>
               <div class="sm:w-60">
                   <div class="p-2 font-permark"> {{post.content.title}} </div>
@@ -33,7 +35,6 @@
             </div>
           </div>
       </NuxtLink>
-
       
     </div>
   </div>
