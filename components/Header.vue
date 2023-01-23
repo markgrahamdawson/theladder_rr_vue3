@@ -111,7 +111,7 @@
           <div
             class="hidden lg:block pl-28 -ml-28 bg-[url('~/assets/headersnakespraycrop2.svg')] bg-auto bg-no-repeat bg-center w-full h-54 z-0">
           </div>
-          <div class="fixed top-0 right-0 w-30 h-30 pt-8 pr-32 text-lg">
+          <!-- <div class="fixed top-0 right-0 w-30 h-30 pt-8 pr-32 text-lg">
             <div v-if="!firebaseUser" class="flex">
               <div>
                 <IconsUser class="stroke-slate-500" />
@@ -133,7 +133,7 @@
                 <button @click="signOutUser">Sign Out</button>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="mt-8">
             <button class="button" @click="signIn" v-if="!firebaseUser"> Sign in</button>
             <button class="button" @click="signOut" v-if="firebaseUser"> Sign out</button>

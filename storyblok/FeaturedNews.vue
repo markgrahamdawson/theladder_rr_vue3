@@ -19,7 +19,9 @@
                 {{post.content.summary}}. . .
               </div>
             </button>
-            <div class="my-2 h-2 ladder-underline"></div>
+
+              <div class="my-2 ml-16 h-2 ladder-underline"></div>
+            
           <!-- </NuxtLink> -->
         </div>
       </div>
