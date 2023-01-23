@@ -2,7 +2,7 @@
   <div v-editable="blok" class="p-6 w-full">
     <div class="font-josan px-10">
       <NuxtLink to="/events">Back to events</NuxtLink>
-      <div class=" flex justify-center">
+      <div class="relative flex justify-center">
         <img :src="blok.thumbnail?.filename + '/m/400x0' || 'https://picsum.photos/300/175'" :alt="blok.image?.alt"
           class="" />
       </div>

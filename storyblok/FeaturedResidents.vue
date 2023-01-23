@@ -11,7 +11,7 @@
           <div v-if="index%2">
             <div class="sm:flex">
               <div class="sm:w-60">
-                  <div class="p-2 font-semibold"> {{post.content.title}} </div>
+                  <div class="p-2 font-permark"> {{post.content.title}} </div>
                 <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
                   :alt ="post.content.thumbnail?.alt" class="p-2"/>
               </div>
@@ -26,7 +26,7 @@
                 {{post.content.content}}
               </div>
               <div class="sm:w-60">
-                  <div class="p-2 font-semibold"> {{post.content.title}} </div>
+                  <div class="p-2 font-permark"> {{post.content.title}} </div>
                 <img :src="post.content.thumbnail?.filename+'/m/300x0'" 
                   :alt ="post.content.thumbnail?.alt" class="p-2 sm:block"/>
               </div>

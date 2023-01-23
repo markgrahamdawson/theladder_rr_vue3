@@ -8,10 +8,15 @@
         <div v-for="post in futureEvents" :key="post._uid" class="py-2">
           <NuxtLink :to="{ name: 'eventsdetail-slug', params: { slug: post.slug } }">
             <div class="mb-8 sm:block">
-              <div class="font-josan text-teal flex justify-center items-center">
+
+
+              <div class="relative font-josan text-teal flex justify-center items-center">
+                <div class="h-28 w-28 -ml-6 -my-12 opacity-80 absolute bottom-0 left-0 bg-[url('~/assets/eye-warmred-INKY.svg')] bg-auto bg-no-repeat bg-center"></div>
                 <img :src="post.content.thumbnail?.filename + '/m/300x0'" :alt="post.content.thumbnail?.alt"
                   class="p-2 h-60 object-cover" />
               </div>
+
+
               <div class="font-josan text-teal p-2">
                 {{ post.content.date }}
               </div>
@@ -35,7 +40,8 @@
         <div v-for="post in pastEvents" :key="post._uid" class="py-2">
           <NuxtLink :to="{ name: 'eventsdetail-slug', params: { slug: post.slug } }">
             <div class="mb-8 sm:block">
-              <div class="font-josan text-teal">
+              <div class="relative font-josan text-teal">
+                <div class="h-28 w-28 -ml-6 -my-12 opacity-80 absolute bottom-0 left-0 bg-[url('~/assets/eye-warmred-INKY.svg')] bg-auto bg-no-repeat bg-center"></div>
                 <img :src="post.content.thumbnail?.filename + '/m/300x0'" :alt="post.content.thumbnail?.alt"
                   class="p-2 h-60 object-cover" />
               </div>
