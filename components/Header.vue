@@ -56,15 +56,15 @@
                 </NuxtLink>
                 <div class="font-amatic font-semibold text-black py-2">|</div>
                 <NuxtLink to="/residents"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Residents
+                  class="font-amatic font-semibold text-black hover:text-gray-300 px-1 py-2">Residents
                 </NuxtLink>
                 <div class="font-amatic font-semibold text-black py-2">|</div>
                 <NuxtLink to="/events"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Events
+                  class="font-amatic font-semibold text-black hover:text-gray-300 px-1 py-2">Events
                 </NuxtLink>
                 <div class="font-amatic font-semibold text-black py-2">|</div>
                 <NuxtLink to="/contacts"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Contact
+                  class="font-amatic font-semibold text-black hover:text-gray-300 px-1 py-2">Contact
                 </NuxtLink>
               </div>
               <div class="flex space-x-2 pt-2">
