@@ -48,23 +48,23 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
                 <NuxtLink to="/news"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">News
+                  class="font-amatic font-semibold text-black hover:text-gray-300 px-1 py-2">News
                 </NuxtLink>
                 <div class="font-amatic font-semibold text-black py-2">|</div>
                 <NuxtLink to="/about"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About
+                  class="font-amatic font-semibold text-black hover:text-gray-300 px-1 py-2">About
                 </NuxtLink>
                 <div class="font-amatic font-semibold text-black py-2">|</div>
                 <NuxtLink to="/residents"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Residents
+                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Residents
                 </NuxtLink>
                 <div class="font-amatic font-semibold text-black py-2">|</div>
                 <NuxtLink to="/events"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events
+                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Events
                 </NuxtLink>
                 <div class="font-amatic font-semibold text-black py-2">|</div>
                 <NuxtLink to="/contacts"
-                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Contact
+                  class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Contact
                 </NuxtLink>
               </div>
               <div class="flex space-x-2 pt-2">
@@ -80,27 +80,27 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <div>
                   <NuxtLink to="/news"
-                    class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2"
+                    class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2"
                     aria-current="page">News</NuxtLink>
                 </div>
                 <div>
                   <NuxtLink to="/about"
-                    class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">About
+                    class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">About
                   </NuxtLink>
                 </div>
                 <div>
                   <NuxtLink to="/residents"
-                    class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">
+                    class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">
                     Residents</NuxtLink>
                 </div>
                 <div>
                   <NuxtLink to="/events"
-                    class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Events
+                    class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Events
                   </NuxtLink>
                 </div>
                 <div>
                   <NuxtLink to="/contacts"
-                    class="font-amatic text-2xl font-semibold text-black hover:text-gray-300 px-1 py-2 text-sm">Contact
+                    class="font-amatic text-xl font-semibold text-black hover:text-gray-300 px-1 py-2">Contact
                   </NuxtLink>
                 </div>
               </div>

@@ -5,7 +5,7 @@
     <div class="font-amatic font-semibold text-4xl title ladder-underline-small mb-8">
       About
     </div>
-    <div class="font-josan px-10 pb-10 pt-8">
+    <div class="font-josan md:px-10 pb-10 pt-8">
       <p class="m-2 font-bold text-xl">
         Redruth Former Library
       </p>
