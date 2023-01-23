@@ -1,16 +1,16 @@
 <template>
   <div v-editable="blok" class="p-6 w-full">
-    <div class="font-josan">
+    <div class="font-josan px-10">
       <NuxtLink to="/events">Back to events</NuxtLink>
       <div class=" flex justify-center">
         <img :src="blok.thumbnail?.filename + '/m/400x0' || 'https://picsum.photos/300/175'" :alt="blok.image?.alt"
           class="" />
       </div>
       <div class="px-16 pb-4 pt-8 font-semibold flex">
-        <div class="w-3/4">
+        <div class="w-3/4 text-teal">
           {{ blok.date || "Date" }}
         </div>
-        <div class="w-1/4">
+        <!-- <div class="w-1/4">
           <div v-if="!firebaseUser" class="">
             <NuxtLink to="/firebase">Sign in to buy tickets for this event!</NuxtLink>
           </div>
@@ -21,18 +21,17 @@
               <div v-if="products[0]?.prices[0]?.unit_amount">£ {{ products[0]?.prices[0]?.unit_amount / 100 }}</div>
             </button>
           </div>
-        </div>
+        </div> -->
+      </div>
+      <div class="w-full px-16 py-2 font-permark ">
+        {{ blok.performance || "Performance" }}
       </div>
       <div class="w-full px-16 py-2">
         {{ blok.company || "Company" }}
       </div>
-      <div class="w-full px-16 py-2 ">
-        {{ blok.performance || "Performance" }}
-      </div>
       <div class="w-full px-16">
         {{ blok.content || "Lorem Ipsum" }}
       </div>
-      {{ products[0]?.prices }}
     </div>
   </div>
 

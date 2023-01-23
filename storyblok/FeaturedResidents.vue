@@ -1,10 +1,10 @@
 <template> 
-  <div v-editable="blok" class="p-6 w-full">
+  <div v-editable="blok" class="md:p-6 w-full">
     <div class="font-amatic font-semibold text-4xl title ladder-underline-small mb-8">
       Residents
     </div>
     <div v-for="(post, index) in blok.residents" :key="post._uid"
-    class="p-8 font-josan"
+    class="md:p-8 font-josan mb-8"
       >
       <NuxtLink :to="{name: 'residentsdetail-slug', params: {slug: post.slug}}">
         
