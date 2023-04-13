@@ -26,7 +26,8 @@ module.exports = {
       "permark": "permark",
       "josan": "josan",
       "permark": "permark",
-      "lbtk": "lbtk"
+      "lbtk": "lbtk",
+      "josefin": "josefin"
     },
     extend: {
       colors: {
@@ -34,10 +35,13 @@ module.exports = {
         current: 'currentColor',
         mizzle: '#bfc5b8',
         offwhite: '#f0ece3',
-        teal: '#4da4a4',
+        teal: '#00a7a5',
+        orange: '#f15a22',
+        beige: '#efebe0',
         richblack: '#13100d',
         brightyellow: '#FFEE00',
         warmred: '#E94F35'
+
       }
     },
   },

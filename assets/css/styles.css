@@ -60,6 +60,14 @@
     src: url('~/assets/fonts/lbtk/LovedbytheKing-Regular.ttf')
 }
 
+@font-face {
+    font-family: 'josefin';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('~/assets/fonts/josefin/JosefinSans-Regular.ttf')
+}
+
 
 /* @font-face {
     font-family: 'josan';
