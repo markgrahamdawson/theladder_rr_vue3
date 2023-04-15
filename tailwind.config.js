@@ -26,7 +26,8 @@ module.exports = {
       "permark": "permark",
       "josan": "josan",
       "permark": "permark",
-      "lbtk": "lbtk"
+      "lbtk": "lbtk",
+      "josefin": "josefin"
     },
     extend: {
       colors: {
