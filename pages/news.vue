@@ -5,9 +5,9 @@
       <StoryblokComponent v-if="story" :blok="story.content"></StoryblokComponent>
     </div>
   </div>
-  </template>
+</template>
   
-  <script lang="ts" setup>
+<script lang="ts" setup>
   import { ref } from 'vue';
 
   const resolveRelations = ['FeaturedNews.news']
@@ -21,9 +21,7 @@
       resolveRelations,
     }
   )
-
-  
-  </script>
+</script>
   
   <style lang="css" scoped></style>
   

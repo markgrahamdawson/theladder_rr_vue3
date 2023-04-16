@@ -1,0 +1,32 @@
+<template>
+  <div class="bg-white w-full p-12">
+    <div class="py-7 px-4 font-bold text-3xl font-josan flex space-x-4 justif-center items-center">
+      <div>Recent News</div>
+      <IconsArrow />
+    </div>
+    <div>
+      <SlidingContentCard :content="slidingCardContent" />
+    </div>
+    <div v-editable="blok" class="w-full md:p-6">
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import SlidingContentCard, { SlidingContentCardContent } from '~/components/SlidingContentCardNews.vue'
+
+const props = defineProps({
+  blok: Object,
+})
+
+const slidingCardContent: SlidingContentCardContent[] =  props.blok.news.map( (item: any) => {
+  return {
+    title: item.content.title,
+    text: item.content.content,
+    image: item.content.thumbnail?.filename+'/m/400x0',
+    date: new Date(item.published_at).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }),
+    slug: item.slug
+  }
+})
+
+</script>
