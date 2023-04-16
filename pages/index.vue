@@ -3,6 +3,7 @@
     <HomeHero/>
     <HomeAbout />
     <StoryblokComponent v-if="story" :blok="story.content"></StoryblokComponent>
+    <HomeResRent />
   </div>
 </template>
 
