@@ -1,5 +1,6 @@
 <template>
   <div>
+    <HomeHero/>
     <HomeAbout />
     <StoryblokComponent v-if="story" :blok="story.content"></StoryblokComponent>
   </div>
