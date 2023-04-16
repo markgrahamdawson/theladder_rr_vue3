@@ -21,7 +21,7 @@
             <NuxtLink :to="{ name: 'news' }">
               Read more
             </NuxtLink>
-            <IconsBuilding class="hidden md:block absolute h-36 w-36 right-0 -bottom-24"/>
+            <IconsBuilding class="hidden md:block absolute h-40 w-40 right-0 -bottom-24"/>
           </div>
         </div>
       </div>
