@@ -1,5 +1,5 @@
 <template>
-  <div class=" bg-white md:grid md:grid-cols-2 items-center w-full" style="grid-template-columns: 7fr 10fr">
+  <div class=" bg-white md:grid md:grid-cols-2 items-center w-full my-8" style="grid-template-columns: 7fr 10fr">
     <!-- Left Col -->
     <div class="bg-offwhite text-center py-10">
       <div class="w-3/4 p-4 mx-auto sm:p-0">
