@@ -1,11 +1,11 @@
 <template>
-  <div class="flex py-10">
+  <div class="flex flex-col-reverse md:flex-row py-10">
     <!-- left box -->
-    <div class="w-1/2 m-auto">
+    <div class="md:w-1/2 m-auto">
       <img src="~/assets/Cafe.png" alt="Beets and Roots Cafe" />
     </div>
     <!-- right box -->
-    <div class="w-1/2 m-auto bg-offwhite font-josefin my-4 p-10 space-y-4 relative">
+    <div class="md:w-1/2 m-auto bg-offwhite font-josefin md:my-4 p-10 space-y-4 relative">
       <div class="font-semibold text-4xl">
         <h1>Beets and Roots</h1> 
       </div>
@@ -27,7 +27,7 @@
           Saturday 12-6
         </div> 
       </div>
-      <IconsSquigles class="hidden md:block absolute h-44 w-44 lg:h-64 lg:w-64 right-0 -bottom-10"/>
+      <IconsSquigles class="absolute h-44 w-44 lg:h-64 lg:w-64 right-0 -bottom-10"/>
     </div>
   </div>
 </template>
