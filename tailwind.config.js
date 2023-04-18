@@ -12,6 +12,11 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    extend: {
+      scale: {
+        '-100': '-1',
+      }
+    },
     // fontFamily: {
     //   permark: ['Permanent Marker'],
     //   lbtk: ['Loved by the King'],
