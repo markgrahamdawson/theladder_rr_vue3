@@ -7,8 +7,6 @@
     <div>
       <SlidingContentCard :content="slidingCardContent" />
     </div>
-    <div v-editable="blok" class="w-full md:p-6">
-    </div>
   </div>
 </template>
 

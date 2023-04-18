@@ -2,13 +2,16 @@
   <div>
     <HomeHero/>
     <HomeAbout />
-    <StoryblokComponent v-if="story" :blok="story.content"></StoryblokComponent>
+    <HomeNews :blok="story.content.body[0]"/>
     <HomeResRent />
+    <HomeCafe />
+    <!-- <HomeResidentsComponent :blok="story.content.body[1]"/> -->
   </div>
 </template>
 
 <script lang="ts" setup>
-const resolveRelations = ['HomeNewsComponent.news']
+
+const resolveRelations = ['HomeNews.news', 'HomeResidents.residents']
 
 const story = await useAsyncStoryblok('home',
   {
@@ -19,6 +22,7 @@ const story = await useAsyncStoryblok('home',
     resolveRelations,
   }
 )
+
 </script>
 
 <style lang="css" scoped></style>
