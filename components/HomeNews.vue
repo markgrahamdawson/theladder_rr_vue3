@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white w-full p-12">
+  <div class="bg-white w-full">
     <div class="py-7 px-4 font-bold text-3xl font-josan flex space-x-4 justif-center items-center">
       <div>Recent News</div>
       <IconsArrow />

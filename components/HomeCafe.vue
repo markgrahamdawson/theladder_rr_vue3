@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col-reverse md:flex-row py-10">
+  <div class="flex flex-col-reverse md:flex-row">
     <!-- left box -->
     <div class="md:w-1/2 m-auto">
       <img src="~/assets/Cafe.png" alt="Beets and Roots Cafe" />

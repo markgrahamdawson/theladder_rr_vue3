@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full md:flex font-josan my-4">
+  <div class="relative w-full md:flex font-josan">
     <!-- left -->
     <img src="~/assets/nursery-desktop-L.png" class="md:w-1/2 object-cover object-center" alt="Kids sitting a circle scribbling on paper."  />
     <!-- right -->

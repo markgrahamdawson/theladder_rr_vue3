@@ -1,11 +1,13 @@
 <template>
   <div>
     <HomeHero/>
-    <HomeAbout />
-    <HomeNews :blok="story.content.body[0]"/>
-    <HomeResRent />
-    <HomeCafe />
+    <HomeAbout class="py-5" />
+    <HomeNews :blok="story.content.body[0]" class="py-5"/>
+    <HomeResRent class="py-5" />
+    <HomeCafe class="py-5" />
     <!-- <HomeResidentsComponent :blok="story.content.body[1]"/> -->
+    <HomeMailingList class="py-5" />
+    <HomeNursery class="py-5" />
   </div>
 </template>
 
