@@ -8,7 +8,7 @@
         </div>
 
         <!-- Right -->
-        <div class="md:bg-[url('~/assets/nursery-desktop-R.png')] sm:bg-[url('~/assets/nursery-mobile-B.png')] bg-no-repeat bg-contain bg-center bg-transparent flex items-center justify-center space-y-6 font-josan md:h-auto sm:h-screen mt-0 ">
+        <div class="md:bg-[url('~/assets/nursery-desktop-R.png')] sm:bg-[url('~/assets/nursery-mobile-B.png')] h-full bg-no-repeat bg-cover bg-center bg-transparent flex items-center justify-center space-y-6 font-josan mt-0 ">
             <div class="text-white text-center p-14 space-y-10">
                 <div class="text-3xl">
                     Want to Check Out the Nursery?
