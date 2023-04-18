@@ -35,7 +35,8 @@ module.exports = {
         current: 'currentColor',
         mizzle: '#bfc5b8',
         offwhite: '#f0ece3',
-        teal: '#4da4a4',
+        teal: '#00a7a5',
+        orange: '#f15a22',
         richblack: '#13100d',
         brightyellow: '#FFEE00',
         warmred: '#E94F35'
