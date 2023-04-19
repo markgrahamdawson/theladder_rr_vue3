@@ -1,8 +1,8 @@
 <template>
-  <div class=" bg-white md:grid md:grid-cols-2 items-center w-full" style="grid-template-columns: 7fr 10fr">
+  <div class=" bg-white md:grid md:grid-cols-2 items-center w-full">
     <!-- Left Col -->
-    <div class="bg-offwhite text-center py-10">
-      <div class="w-3/4 p-4 mx-auto sm:p-0">
+    <div class="bg-offwhite text-center px-12 py-20">
+      <div class="w-full m-auto">
         <div class="title font-josefin font-semibold text-4xl title pb-4">
           <h1>Welcome to the ladder</h1> 
         </div>

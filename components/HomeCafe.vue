@@ -5,7 +5,7 @@
       <img src="~/assets/Cafe.png" alt="Beets and Roots Cafe" />
     </div>
     <!-- right box -->
-    <div class="md:w-1/2 m-auto bg-offwhite font-josefin md:my-4 p-10 space-y-4 relative">
+    <div class="md:w-1/2 m-auto bg-offwhite font-josefin md:my-4 px-12 py-20 space-y-4 relative">
       <div class="font-semibold text-4xl">
         <h1>Beets and Roots</h1> 
       </div>
