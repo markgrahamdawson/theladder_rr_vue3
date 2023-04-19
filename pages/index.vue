@@ -1,7 +1,7 @@
 <template>
   <div>
     <HomeHero/>
-    <HomeAbout class="py-5" />
+    <HomeAbout class="pt-10 pb-5" />
     <HomeNews :blok="story.content.body[0]" class="py-5 md:px-10"/>
     <HomeResRent class="py-5" />
     <HomeCafe class="py-5" />

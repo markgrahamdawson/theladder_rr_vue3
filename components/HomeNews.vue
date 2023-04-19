@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white w-full">
-    <div class="pb-7 px-4 font-bold text-3xl font-josan flex space-x-4 justif-center items-center">
+    <div class="pb-5 px-4 font-bold text-3xl font-josan flex space-x-4 justif-center items-center">
       <div>Recent News</div>
       <IconsArrow />
     </div>

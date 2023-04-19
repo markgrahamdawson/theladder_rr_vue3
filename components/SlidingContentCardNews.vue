@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full pb-10 font-josan">
+  <div class="w-full font-josan">
     <div class="flex flex-col relative">
       <div class="h-[500px] md:h-96 overflow-hidden relative flex justify-start items-center">
         <div 
