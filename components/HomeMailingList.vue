@@ -1,4 +1,5 @@
 <template>
+<div class="w-full">
   <div class="w-full md:bg-[url('~/assets/mailing.png')] md:bg-no-repeat md:bg-cover md:bg-center bg-orange flex items-center justify-center space-y-6 font-josan">
     <div class="py-20 px-4 sm:px-0">
       <div class="text-white text-center font-semibold space-y-5">
@@ -22,6 +23,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script lang="ts" setup>

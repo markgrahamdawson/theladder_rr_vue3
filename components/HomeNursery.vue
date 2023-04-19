@@ -19,7 +19,7 @@
         </div>
       </div>
       <!-- top right svg -->
-      <IconsRadio class="absolute fill-white h-32 w-32 xl:w-52 xl:h-52 -top-5 -right-5 rotate-180"/>
+      <IconsRadio class="absolute fill-white h-32 w-32 xl:w-52 xl:h-52 -top-8 -right-0 rotate-180"/>
       <!-- bottom two svg -->
       <IconsRadio class="absolute fill-white h-32 w-32 xl:w-52 xl:h-52 -bottom-5 -left-2 xl:-bottom-10"/>
       <IconsRadio class="absolute fill-white h-32 w-32 xl:w-52 xl:h-52 -bottom-5 -left-[115px] xl:-bottom-10 xl:-left-[200px] transform -scale-x-100"/>
