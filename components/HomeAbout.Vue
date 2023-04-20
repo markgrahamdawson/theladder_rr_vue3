@@ -1,9 +1,8 @@
 <template>
-  <div class="py-5">
-    <div class=" bg-white md:grid md:grid-cols-2 items-center w-full" style="grid-template-columns: 8fr 10fr">
-  <!-- Left Col -->
-    <div class="bg-offwhite flex text-center items-center py-10 h-3/4">
-      <div class="w-3/4 p-4 m-auto sm:p-0">
+  <div class=" bg-white md:grid md:grid-cols-2 items-center w-full">
+    <!-- Left Col -->
+    <div class="bg-offwhite text-center px-12 py-20">
+      <div class="w-full m-auto">
         <div class="title font-josefin font-semibold text-4xl title pb-4">
           <h1>Welcome to the ladder</h1> 
         </div>
@@ -32,6 +31,5 @@
       <img src="~/assets/discussing.png" alt="Josh and Felix talking by the Redruth library window" class="h-1/5 object-cover" />
     </div>
   </div>
-</div>
 
 </template>
