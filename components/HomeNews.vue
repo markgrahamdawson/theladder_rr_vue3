@@ -21,7 +21,7 @@ const slidingCardContent: SlidingContentCardContent[] =  props.blok.news.map( (i
   return {
     title: item.content.title,
     text: item.content.content,
-    image: item.content.thumbnail?.filename+'/m/400x0',
+    image: item.content.thumbnail?.filename+'/m/800x0',
     date: new Date(item.published_at).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }),
     slug: item.slug
   }
