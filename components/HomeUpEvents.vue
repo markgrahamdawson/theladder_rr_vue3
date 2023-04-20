@@ -23,7 +23,7 @@
     </div>
     <!-- Right Col -->
       <div>
-        <img src="~/assets/events.png" class="md:w-full object-cover object-center" alt="Kids sitting a circle scribbling on paper."/>
+        <img src="~/assets/events.png" class="md:w-full object-cover object-center" alt="Library Lobby with a man sitting at the front desk"/>
       </div>
     </div>
   </div>
