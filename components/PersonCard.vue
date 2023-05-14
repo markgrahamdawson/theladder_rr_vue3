@@ -1,31 +1,40 @@
 <template>
-
-    <!-- <div :class="classText + ' bg-' + borderColor + ' p-2'"> -->
-        <div :class="'border-8 border-solid border-' + borderColor + ' h-full w-full flex items-end justify-center bg-[url(~/' + image + ')] bg-cover bg-no-repeat bg-center relative'">
-            <div class=" h-1/2 bg-gradient-to-t from-[black_80%] to-transparent absolute bottom-0 z-20 opacity-[.85] pt-[20%] pb-4">
-                
-                <div class="top-[20%] text-white font-josefin items-b px-5 flex flex-col justify-evenly h-full">
-                    <div class="font-semibold text-3xl uppercase">{{ name }}</div>
-                    <div class="text-gray-400 text-2xl italic font-semibold">{{ jobTitle }}</div>
-                    <div>{{ description }}</div>
-                </div>
-
-                <!-- Not sure how to pull a vue component by name from a script -->
-                <IconsEyeInky class="absolute top-[20%] right-3 fill-white h-1/4 w-1/4 transform"/>
-            </div>
-        </div>
-    <!-- </div> -->
-
+  <div
+    :class="`h-[400px] relative border border-8 border-solid h-full w-full border flex items-end justify-center bg-cover bg-black bg-no-repeat 2xl:bg-contain bg-center border-${props.borderColor}`"
+    :style="{ backgroundImage: `url(${props.image})` }"
+  >
+    <!-- fade -->
+    <div
+      class="h-1/3 w-full text-white font-josefin p-2 bg-gradient-to-t from-[black_80%] to-transparent z-20 opacity-[.85]"
+    >
+      <!-- text -->
+      <div class="font-semibold text-xl uppercase">{{ name }}</div>
+      <div class="text-gray-400 text-l italic font-semibold">
+        {{ jobTitle }}
+      </div>
+      <div class="text-sm">
+        {{ description }}
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
+import Vue, { PropType } from "vue";
+import Eye from "~/components/icons/EyeInky.vue";
 
-const props = defineProps<{
-    name: string,
-    jobTitle: string,
-    description: string,
-    image: string,
-    borderColor: string,
-    svgicon: string
-}>()
+const props = defineProps({
+  borderColor: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  name: String,
+  jobTitle: String,
+  description: String,
+  svgIcon: Object,
+});
 </script>
