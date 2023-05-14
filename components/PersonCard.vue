@@ -5,7 +5,7 @@
   >
     <!-- fade -->
     <div
-      class="h-1/3 w-full text-white font-josefin p-2 bg-gradient-to-t from-[black_80%] to-transparent z-20 opacity-[.85]"
+      class="relative h-1/3 w-full text-white font-josefin p-2 bg-gradient-to-t from-[black_80%] to-transparent z-20 opacity-[.85]"
     >
       <!-- text -->
       <div class="font-semibold text-xl uppercase">{{ name }}</div>
@@ -15,6 +15,16 @@
       <div class="text-sm">
         {{ description }}
       </div>
+      <!-- svg -->
+      <component
+        :is="svgIcon"
+        class="absolute bottom-[80px] fill-white h-2/3 w-2/3 transform xl:left-[200px]"
+        :class="[
+          name === 'Josh' || name === 'Liv'
+            ? 'left-[130px] p-6'
+            : 'left-[130px]',
+        ]"
+      />
     </div>
   </div>
 </template>

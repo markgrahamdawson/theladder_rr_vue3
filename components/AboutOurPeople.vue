@@ -28,7 +28,7 @@
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia."
         image="/assets/images/andy.png"
         borderColor="black"
-        :svgIcon="Eye"
+        :svgIcon="Squigles"
       />
       <PersonCard
         class="h-[480px] sm:mb-3"
@@ -37,7 +37,7 @@
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia."
         image="/assets/images/grace.png"
         borderColor="white"
-        :svgIcon="Snake"
+        :svgIcon="Radio"
       />
       <PersonCard
         class="h-[480px] sm:-mt-10 md:mt-10"
@@ -46,7 +46,7 @@
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia."
         image="/assets/images/leonora.png"
         borderColor="orange"
-        :svgIcon="Snake"
+        :svgIcon="Building"
       />
       <PersonCard
         class="h-[480px] mb-10 md:mb-3"
@@ -62,6 +62,9 @@
 </template>
 
 <script lang="ts" setup>
-import Eye from "~/components/icons/EyeInky.vue";
+import Eye from "~/components/icons/Eye.vue";
 import Snake from "~/components/icons/Snake.vue";
+import Radio from "~/components/icons/Radio.vue";
+import Squigles from "~/components/icons/Squigles.vue";
+import Building from "~/components/icons/Building.vue";
 </script>
