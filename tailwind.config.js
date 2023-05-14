@@ -11,6 +11,11 @@ module.exports = {
     "./*.{vue,js,ts}",
     "./nuxt.config.{js,ts}",
   ],
+  safelist: [
+    {
+      pattern: /border-(teal|orange)/, // You can display all the colors that you need
+    }
+  ],
   theme: {
     extend: {
       scale: {
