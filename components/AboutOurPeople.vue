@@ -1,5 +1,5 @@
 <template>
-  <div class="p-20">
+  <div class="px-10 sm:p-20">
     <div
       class="grid-cols-1 grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-5"
     >
