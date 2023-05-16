@@ -32,13 +32,13 @@
                 :class="showAbout ? 'hidden' : ''"
               >
                 <NuxtLink
-                  to="/about"
+                  to="/about/"
                   class="hover:text-gray-300"
                   @click="showAbout = !showAbout"
                   >About</NuxtLink
                 >
                 <NuxtLink
-                  to="/about/history"
+                  to="/about/history/"
                   class="hover:text-gray-300"
                   @click="showAbout = !showAbout"
                   >History</NuxtLink
