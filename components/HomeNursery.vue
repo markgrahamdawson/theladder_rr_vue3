@@ -1,7 +1,7 @@
 <template>
   <div class="relative w-full md:flex font-josan">
     <!-- left -->
-    <img src="~/assets/nursery.png" class="md:w-1/2 lg:-mr-[2.5px] object-cover object-center" alt="Kids sitting a circle scribbling on paper."  />
+    <img src="~/assets/nursery.png" class="md:w-1/2 lg:-mr-[2.5px] object-cover object-center" alt="Children rubbing their hands in paint."  />
     <!-- right -->
     <div class="relative md:w-1/2 bg-teal md:my-4 flex flex-col justify-center">
       <div class="text-white text-center p-14 pt-20 space-y-10">
