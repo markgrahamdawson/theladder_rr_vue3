@@ -23,7 +23,7 @@
     </div>
     <div class="relative md:w-1/3 pt-10 md:pt-0 h-full">
       <img
-        src="~/assets/images/snow.png"
+        src="~/assets/snow.png"
         alt="A picture of the library building in the snow"
         class="object-fill grayscale"
       />
@@ -36,7 +36,7 @@
   <div class="pb-10 md:pb-28 bg-offwhite md:flex items-center">
     <div class="relative md:w-1/3 pt-10 md:pt-0 h-full">
       <img
-        src="~/assets/images/buildingback.png"
+        src="~/assets/buildingback.png"
         alt="A picture of the library building in the snow"
         class="object-fill grayscale hidden md:block"
       />

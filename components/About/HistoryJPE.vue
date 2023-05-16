@@ -17,7 +17,7 @@
     </div>
     <div class="md:w-1/2">
       <img
-        src="~/assets/images/jpe.png"
+        src="~/assets/jpe.png"
         alt="A picture of the library building in the snow"
         class="object-fill grayscale pt-10 md:pt-0"
       />
