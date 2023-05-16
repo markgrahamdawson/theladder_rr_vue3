@@ -1,5 +1,6 @@
 <template>
   <div class="px-10 sm:p-20">
+    <div class="font-josefin font-semibold text-4xl pb-8">Our People</div>
     <div
       class="grid-cols-1 grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-5"
     >
