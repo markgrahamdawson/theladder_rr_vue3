@@ -1,4 +1,8 @@
 <template>
-  <Hero :text="`Directory`" />
+  <div>
+    <Hero :text="`Directory`" />
+    <AboutDirectory />
+  </div>
 </template>
+
 <script lang="ts" setup></script>
