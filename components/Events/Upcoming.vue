@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- {{ futureEvents }} -->
     <div class="font-josan pb-4 text-xl">Upcoming Events</div>
     <div
       class="h-[500px] w-full border border-red-500 grid grid-cols-2 grid-rows-12 gap-2 md:gap-4 grid-flow-row-dense"
@@ -7,11 +8,12 @@
       <Transition>
         <div
           v-if="show"
-          class="border border-black bg-black"
+          class="border border-black bg-gray-500"
           :class="formatCellOne"
           @click="selected(1)"
         >
-          01
+          {{ futureEvents[0].name }}
+          {{ futureEvents[0].content.company }}
         </div>
       </Transition>
       <Transition>
@@ -21,7 +23,8 @@
           :class="formatCellTwo"
           @click="selected(2)"
         >
-          02
+          {{ futureEvents[1].name }}
+          {{ futureEvents[1].content.company }}
         </div>
       </Transition>
       <Transition>
@@ -31,7 +34,8 @@
           :class="formatCellThree"
           @click="selected(3)"
         >
-          03
+          {{ futureEvents[2].name }}
+          {{ futureEvents[2].content.company }}
         </div>
       </Transition>
       <Transition>
@@ -41,7 +45,7 @@
           :class="formatCellFour"
           @click="selected(4)"
         >
-          04
+          <!-- {{ futureEvents[3] }} -->
         </div>
       </Transition>
       <Transition>
@@ -59,6 +63,10 @@
 </template>
 
 <script lang="ts" setup>
+defineProps({
+  futureEvents: Array<Object>,
+});
+
 const show = ref(true);
 
 const currentSelected = ref(0);
