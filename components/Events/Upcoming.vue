@@ -1,58 +1,60 @@
 <template>
-  {{ show }}
-  <div
-    class="h-[500px] w-full border border-red-500 grid grid-cols-2 grid-rows-12 gap-2 md:gap-4 grid-flow-row-dense"
-  >
-    <Transition>
-      <div
-        v-if="show"
-        class="border border-black bg-black"
-        :class="formatCellOne"
-        @click="selected(1)"
-      >
-        01
-      </div>
-    </Transition>
-    <Transition>
-      <div
-        v-if="show"
-        class="border border-black bg-red-500"
-        :class="formatCellTwo"
-        @click="selected(2)"
-      >
-        02
-      </div>
-    </Transition>
-    <Transition>
-      <div
-        v-if="show"
-        class="border border-black bg-blue-500"
-        :class="formatCellThree"
-        @click="selected(3)"
-      >
-        03
-      </div>
-    </Transition>
-    <Transition>
-      <div
-        v-if="show"
-        class="border border-black bg-yellow-500"
-        :class="formatCellFour"
-        @click="selected(4)"
-      >
-        04
-      </div>
-    </Transition>
-    <Transition>
-      <div
-        v-if="show"
-        class="border border-black bg-green-500"
-        :class="formatCellFive"
-        @click="selected(5)"
-      >
-        05
-      </div>
-    </Transition>
+  <div>
+    <div class="font-josan pb-4 text-xl">Upcoming Events</div>
+    <div
+      class="h-[500px] w-full border border-red-500 grid grid-cols-2 grid-rows-12 gap-2 md:gap-4 grid-flow-row-dense"
+    >
+      <Transition>
+        <div
+          v-if="show"
+          class="border border-black bg-black"
+          :class="formatCellOne"
+          @click="selected(1)"
+        >
+          01
+        </div>
+      </Transition>
+      <Transition>
+        <div
+          v-if="show"
+          class="border border-black bg-red-500"
+          :class="formatCellTwo"
+          @click="selected(2)"
+        >
+          02
+        </div>
+      </Transition>
+      <Transition>
+        <div
+          v-if="show"
+          class="border border-black bg-blue-500"
+          :class="formatCellThree"
+          @click="selected(3)"
+        >
+          03
+        </div>
+      </Transition>
+      <Transition>
+        <div
+          v-if="show"
+          class="border border-black bg-yellow-500"
+          :class="formatCellFour"
+          @click="selected(4)"
+        >
+          04
+        </div>
+      </Transition>
+      <Transition>
+        <div
+          v-if="show"
+          class="border border-black bg-green-500"
+          :class="formatCellFive"
+          @click="selected(5)"
+        >
+          05
+        </div>
+      </Transition>
+    </div>
   </div>
 </template>
 
@@ -83,16 +85,11 @@ const selected = async (id: number) => {
   currentSelected.value = id;
   index.value = id;
   if (id === 1) {
-    formatCellOne.value =
-      "col-span-2 row-span-6 transition-opacity ease-in transition-width transition-slowest ease";
-    formatCellTwo.value =
-      "col-span-1 row-span-6 transition-opacity ease-in transition-width transition-slowest ease";
-    formatCellThree.value =
-      "col-span-1 row-span-3 transition-opacity ease-in transition-width transition-slowest ease";
-    formatCellFour.value =
-      "col-span-1 row-span-3 transition-opacity ease-in transition-width transition-slowest ease";
-    formatCellFive.value =
-      "col-span-1 row-span-3 transition-opacity ease-in transition-width transition-slowest ease";
+    formatCellOne.value = "col-span-2 row-span-6";
+    formatCellTwo.value = "col-span-1 row-span-6";
+    formatCellThree.value = "col-span-1 row-span-3";
+    formatCellFour.value = "col-span-1 row-span-3";
+    formatCellFive.value = "col-span-1 row-span-3";
   } else if (id === 2) {
     formatCellOne.value = "col-span-1 row-span-3";
     formatCellTwo.value = "col-span-2 row-span-6";
