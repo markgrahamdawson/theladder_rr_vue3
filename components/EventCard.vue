@@ -12,7 +12,10 @@
 
 
         <!-- Left Side (image) -->
-        <div class="w-2/5 h-full bg-cover bg-center" :style="`background-image: url(${useAsset(image)});`"></div>
+        <!-- <div class="w-2/5 h-full bg-cover bg-center" :style="`background-image: url(${useAsset(image)});`" title="test"></div> -->
+        <div class="w-2/5">
+            <img class="object-cover h-full" :src="useAsset(image)">
+        </div>
 
         <!-- Right Side (Content) -->
         <div class="w-3/5 h-full py-20 px-16 space-y-16">
@@ -38,8 +41,6 @@
 </template>
 
 <script setup lang="ts">
-import { Title } from '~~/.nuxt/components';
-
 
 function useAsset(path: string): string {
 const assets = import.meta.glob('~/assets/**/*', {
