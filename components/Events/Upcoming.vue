@@ -3,39 +3,54 @@
     <!-- {{ futureEvents }} -->
     <div class="font-josan pb-4 text-xl">Upcoming Events</div>
     <div
-      class="h-[500px] w-full border border-red-500 grid grid-cols-2 grid-rows-12 gap-2 md:gap-4 grid-flow-row-dense"
+      class="h-full w-full grid grid-cols-1 sm:grid-cols-2 grid-rows-12 gap-2 md:gap-4 grid-flow-row-dense"
     >
       <Transition>
-        <div
-          v-if="show"
-          class="border border-black bg-gray-500"
-          :class="formatCellOne"
-          @click="selected(1)"
-        >
-          {{ futureEvents[0].name }}
-          {{ futureEvents[0].content.company }}
+        <div v-if="show" :class="formatCellOne" @click="selected(1)">
+          <div v-if="currentSelected == 1">
+            <EventsUpcominCardOpen
+              :futureEvent="futureEvents[0]"
+              :color="'teal'"
+            />
+          </div>
+          <div v-else>
+            <EventsUpcominCardClosed
+              :futureEvent="futureEvents[0]"
+              :color="'teal'"
+            />
+          </div>
         </div>
       </Transition>
       <Transition>
-        <div
-          v-if="show"
-          class="border border-black bg-red-500"
-          :class="formatCellTwo"
-          @click="selected(2)"
-        >
-          {{ futureEvents[1].name }}
-          {{ futureEvents[1].content.company }}
+        <div v-if="show" :class="formatCellTwo" @click="selected(2)">
+          <div v-if="currentSelected == 2">
+            <EventsUpcominCardOpen
+              :futureEvent="futureEvents[1]"
+              :color="'orange'"
+            />
+          </div>
+          <div v-else>
+            <EventsUpcominCardClosed
+              :futureEvent="futureEvents[1]"
+              :color="'orange'"
+            />
+          </div>
         </div>
       </Transition>
       <Transition>
-        <div
-          v-if="show"
-          class="border border-black bg-blue-500"
-          :class="formatCellThree"
-          @click="selected(3)"
-        >
-          {{ futureEvents[2].name }}
-          {{ futureEvents[2].content.company }}
+        <div v-if="show" :class="formatCellThree" @click="selected(3)">
+          <div v-if="currentSelected == 3">
+            <EventsUpcominCardOpen
+              :futureEvent="futureEvents[2]"
+              :color="'teal'"
+            />
+          </div>
+          <div v-else>
+            <EventsUpcominCardClosed
+              :futureEvent="futureEvents[2]"
+              :color="'teal'"
+            />
+          </div>
         </div>
       </Transition>
       <Transition>
@@ -83,45 +98,45 @@ const selected = async (id: number) => {
 
   if (id == currentSelected.value) {
     console.log("same");
-    formatCellOne.value = "col-span-1 row-span-5";
-    formatCellTwo.value = "col-span-1 row-span-3";
-    formatCellThree.value = "col-span-1 row-span-3";
-    formatCellFour.value = "col-span-1 row-span-5";
-    formatCellFive.value = "col-span-1 row-span-3";
+    formatCellOne.value = "sm:col-span-1 sm:row-span-5";
+    formatCellTwo.value = "sm:col-span-1 sm:row-span-3";
+    formatCellThree.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFour.value = "sm:col-span-1 sm:row-span-5";
+    formatCellFive.value = "sm:col-span-1 sm:row-span-3";
   }
   console.log(id, currentSelected.value);
   currentSelected.value = id;
   index.value = id;
   if (id === 1) {
-    formatCellOne.value = "col-span-2 row-span-6";
-    formatCellTwo.value = "col-span-1 row-span-6";
-    formatCellThree.value = "col-span-1 row-span-3";
-    formatCellFour.value = "col-span-1 row-span-3";
-    formatCellFive.value = "col-span-1 row-span-3";
+    formatCellOne.value = "sm:col-span-2 sm:row-span-6";
+    formatCellTwo.value = "sm:col-span-1 sm:row-span-6";
+    formatCellThree.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFour.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFive.value = "sm:col-span-1 sm:row-span-3";
   } else if (id === 2) {
-    formatCellOne.value = "col-span-1 row-span-3";
-    formatCellTwo.value = "col-span-2 row-span-6";
-    formatCellThree.value = "col-span-1 row-span-3";
-    formatCellFour.value = "col-span-1 row-span-3";
-    formatCellFive.value = "col-span-1 row-span-3";
+    formatCellOne.value = "sm:col-span-1 sm:row-span-3";
+    formatCellTwo.value = "sm:col-span-2 sm:row-span-6";
+    formatCellThree.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFour.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFive.value = "sm:col-span-1 sm:row-span-3";
   } else if (id === 3) {
-    formatCellOne.value = "col-span-1 row-span-3";
-    formatCellTwo.value = "col-span-1 row-span-6";
-    formatCellThree.value = "col-span-2 row-span-6";
-    formatCellFour.value = "col-span-1 row-span-3";
-    formatCellFive.value = "col-span-1 row-span-3";
+    formatCellOne.value = "sm:col-span-1 sm:row-span-3";
+    formatCellTwo.value = "sm:col-span-1 sm:row-span-6";
+    formatCellThree.value = "sm:col-span-2 sm:row-span-6";
+    formatCellFour.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFive.value = "sm:col-span-1 sm:row-span-3";
   } else if (id === 4) {
-    formatCellOne.value = "col-span-1 row-span-3";
-    formatCellTwo.value = "col-span-1 row-span-3";
-    formatCellThree.value = "col-span-1 row-span-3";
-    formatCellFour.value = "col-span-2 row-span-6";
+    formatCellOne.value = "sm:col-span-1 sm:row-span-3";
+    formatCellTwo.value = "sm:col-span-1 sm:row-span-3";
+    formatCellThree.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFour.value = "sm:col-span-2 sm:row-span-6";
     formatCellFive.value = "col-span-1 row-span-3";
   } else if (id === 5) {
-    formatCellOne.value = "col-span-1 row-span-3";
-    formatCellTwo.value = "col-span-1 row-span-3";
-    formatCellThree.value = "col-span-1 row-span-3";
-    formatCellFour.value = "col-span-1 row-span-3";
-    formatCellFive.value = "col-span-2 row-span-6";
+    formatCellOne.value = "sm:col-span-1 sm:row-span-3";
+    formatCellTwo.value = "sm:col-span-1 sm:row-span-3";
+    formatCellThree.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFour.value = "sm:col-span-1 sm:row-span-3";
+    formatCellFive.value = "sm:col-span-2 sm:row-span-6";
   }
   console.log(id);
   // wait for one second before setting show to true,
