@@ -1,10 +1,10 @@
 <template>
 
-    <div class="bg-black w-full h-full flex flex-row relative font-josefin text-white font-semibold">
+    <div class="bg-black w-full h-full relative font-josefin text-white font-semibold lg:flex flex-row">
         <!-- top part -->
         <div class="absolute bg-orange h-6 w-full"></div>
 
-        <div class="absolute top-6 uppercase flex space-x-3">
+        <div class="absolute top-6 uppercase w-full flex flex-row space-x-3 justify-center lg:justify-start">
             <div v-if="onsite" class="bg-orange h-6 px-10 rounded-b-xl">ON SITE</div>
             <div v-if="free" class="bg-orange h-6 px-10 rounded-b-xl">FREE</div>
 
@@ -13,16 +13,16 @@
 
         <!-- Left Side (image) -->
         <!-- <div class="w-2/5 h-full bg-cover bg-center" :style="`background-image: url(${useAsset(image)});`" title="test"></div> -->
-        <div class="w-2/5">
+        <div class="w-full lg:w-1/3">
             <img class="object-cover h-full" :src="useAsset(image)">
         </div>
 
         <!-- Right Side (Content) -->
-        <div class="w-3/5 h-full py-20 px-16 space-y-16">
+        <div class=" w-full lg:w-2/3 h-full py-20 px-16 space-y-16 text-center lg:text-left">
             <div class="space-y-4">
                 <div class="text-4xl">{{title}}</div>
 
-                <div class="flex space-x-2">
+                <div class="flex space-x-2 justify-center lg:justify-start">
                     <div class="bg-teal w-fit px-16 py-2 text-2xl">{{ date }}</div>
                     <div class="bg-teal w-fit px-14 py-2 text-2xl">{{ time }}</div>
                 </div>
