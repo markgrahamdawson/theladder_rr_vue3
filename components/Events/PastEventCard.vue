@@ -7,9 +7,7 @@
         class="w-full max-h-[200px] min-h-[200px] grayscale object-cover"
       />
     </div>
-    <div
-      class="h-1/3 w-full bg-black p-8 font-josan uppercase text-white border"
-    >
+    <div class="h-1/3 w-full bg-black p-8 font-josan uppercase text-white">
       <div class="space-y-3">
         <div class="text-xl">{{ pastEvent.content.performance }}</div>
         <div class="flex space-x-2 text-xs">
