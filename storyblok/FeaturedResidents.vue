@@ -1,12 +1,23 @@
-<template> 
+<template>
   <div v-editable="blok" class="md:p-6 w-full">
-    <div class="font-amatic font-semibold text-4xl title ladder-underline-small mb-8">
-      Residents
-    </div>
-    <div v-for="(post, index) in blok.residents" :key="post._uid"
-    class="md:p-8 font-josan mb-8"
-      >
-      <NuxtLink :to="{name: 'residentsdetail-slug', params: {slug: post.slug}}">
+    <div
+      v-for="(post, index) in blok.residents"
+      :key="post._uid"
+      class="md:p-8 font-josan mb-8"
+    >
+      <AboutDirectoryCard
+        :title="post.content.title"
+        :thumbnail="post.content.thumbnail"
+        :content="post.content.content"
+        :phone="post.content.phone"
+        :email="post.content.email"
+        :website="post.content.website"
+        :facebook="post.content.facebook"
+        :instagram="post.content.instagram"
+        :twitter="post.content.twitter"
+      />
+
+      <!-- <NuxtLink :to="{name: 'residentsdetail-slug', params: {slug: post.slug}}">
         
           <div v-if="index%2">
             <div class="sm:flex">
@@ -34,14 +45,14 @@
               </div>
             </div>
           </div>
-      </NuxtLink>
-      
+      </NuxtLink> -->
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import AboutDirectoryCard from "~/components/About/DirectoryCard.vue";
 defineProps({
   blok: Object,
-})
+});
 </script>
