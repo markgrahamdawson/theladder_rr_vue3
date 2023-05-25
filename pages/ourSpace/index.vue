@@ -1,7 +1,8 @@
 <template>
   <div>
-    <Hero :text="`OurSpace`" />
+    <Hero :text="`Our Space`" />
     <SpacePracticeRoom class="pt-10 pb-10" />
+    <SpaceResidency class="pt-10 pb-10" />
   </div>
 </template>
 
