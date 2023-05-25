@@ -6,7 +6,7 @@
         v-if="story"
         :blok="story.content"
       ></StoryblokComponent>
-      <EventsPast />
+      <!-- <EventsPast /> -->
     </div>
   </div>
 </template>

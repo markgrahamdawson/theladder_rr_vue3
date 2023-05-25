@@ -9,12 +9,14 @@
         <div v-if="show" :class="formatCellOne" @click="selected(1)">
           <div v-if="currentSelected == 1">
             <EventsUpcominCardOpen
+              v-if="futureEvents[0]"
               :futureEvent="futureEvents[0]"
               :color="'teal'"
             />
           </div>
           <div v-else>
             <EventsUpcominCardClosed
+              v-if="futureEvents[0]"
               :futureEvent="futureEvents[0]"
               :color="'teal'"
             />
@@ -25,12 +27,14 @@
         <div v-if="show" :class="formatCellTwo" @click="selected(2)">
           <div v-if="currentSelected == 2">
             <EventsUpcominCardOpen
+              v-if="futureEvents[1]"
               :futureEvent="futureEvents[1]"
               :color="'orange'"
             />
           </div>
           <div v-else>
             <EventsUpcominCardClosed
+              v-if="futureEvents[1]"
               :futureEvent="futureEvents[1]"
               :color="'orange'"
             />
@@ -41,12 +45,14 @@
         <div v-if="show" :class="formatCellThree" @click="selected(3)">
           <div v-if="currentSelected == 3">
             <EventsUpcominCardOpen
+              v-if="futureEvents[2]"
               :futureEvent="futureEvents[2]"
               :color="'teal'"
             />
           </div>
           <div v-else>
             <EventsUpcominCardClosed
+              v-if="futureEvents[2]"
               :futureEvent="futureEvents[2]"
               :color="'teal'"
             />
@@ -54,23 +60,39 @@
         </div>
       </Transition>
       <Transition>
-        <div
-          v-if="show"
-          class="border border-black bg-yellow-500"
-          :class="formatCellFour"
-          @click="selected(4)"
-        >
-          <!-- {{ futureEvents[3] }} -->
+        <div v-if="show" :class="formatCellFour" @click="selected(4)">
+          <div v-if="currentSelected == 4">
+            <EventsUpcominCardOpen
+              v-if="futureEvents[3]"
+              :futureEvent="futureEvents[3]"
+              :color="'orange'"
+            />
+          </div>
+          <div v-else>
+            <EventsUpcominCardClosed
+              v-if="futureEvents[3]"
+              :futureEvent="futureEvents[3]"
+              :color="'orange'"
+            />
+          </div>
         </div>
       </Transition>
       <Transition>
-        <div
-          v-if="show"
-          class="border border-black bg-green-500"
-          :class="formatCellFive"
-          @click="selected(5)"
-        >
-          05
+        <div v-if="show" :class="formatCellFive" @click="selected(5)">
+          <div v-if="currentSelected == 5">
+            <EventsUpcominCardOpen
+              v-if="futureEvents[4]"
+              :futureEvent="futureEvents[4]"
+              :color="'teal'"
+            />
+          </div>
+          <div v-else>
+            <EventsUpcominCardClosed
+              v-if="futureEvents[4]"
+              :futureEvent="futureEvents[4]"
+              :color="'teal'"
+            />
+          </div>
         </div>
       </Transition>
     </div>
