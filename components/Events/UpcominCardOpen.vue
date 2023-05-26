@@ -2,7 +2,7 @@
   <div class="w-full h-full md:flex">
     <div class="relative md:w-1/3 bg-black">
       <div
-        class="absolute w-full h-full z-50 opacity-50"
+        class="absolute w-full h-full z-40 opacity-50"
         :class="`bg-${color}`"
       ></div>
       <img
