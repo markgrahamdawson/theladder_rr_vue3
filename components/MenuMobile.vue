@@ -13,7 +13,7 @@
       <div
         ref="target"
         v-if="openMobileMenu"
-        class="absolute right-0 top-[100px] left-0 w-full bg-white flex flex-col space-y-4 text-xl py-8"
+        class="absolute right-0 top-[100px] left-0 w-full bg-white flex flex-col space-y-4 text-xl py-8 font-josan"
       >
         <NuxtLink
           to="/about/"
@@ -44,6 +44,12 @@
           class="hover:text-gray-300"
           @click="openMobileMenu = !openMobileMenu"
           >Events
+        </NuxtLink>
+        <NuxtLink
+          to="/ourSpace"
+          class="hover:text-gray-300"
+          @click="openMobileMenu = !openMobileMenu"
+          >Our Space
         </NuxtLink>
       </div>
     </button>
