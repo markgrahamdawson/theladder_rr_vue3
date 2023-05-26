@@ -55,7 +55,7 @@ import { onClickOutside } from "@vueuse/core";
 
 const target = ref(null);
 
-const openMobileMenu = ref(true);
+const openMobileMenu = ref(false);
 
 function closeModal() {
   openMobileMenu.value = false;
