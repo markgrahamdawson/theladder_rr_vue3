@@ -14,7 +14,7 @@
       />
     </div>
     <!-- Right Col -->
-    <div class="bg-offwhite md:w-1/2 text-left px-40 md:px-20 py-20 font-josan">
+    <div class="bg-offwhite md:w-1/2 text-left px-10 md:px-20 py-20 font-josan">
       <h1 class="text-4xl font-semibold">Artist Residency</h1>
       <div class="font-semibold mt-12">
         The Ladder is a hub for creativity and offered residency space for
