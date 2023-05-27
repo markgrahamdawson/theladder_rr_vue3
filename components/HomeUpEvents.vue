@@ -5,7 +5,7 @@
     <!-- Left Col -->
     <div class="relative md:w-1/3 bg-black flex flex-col justify-center">
       <div class="text-white font-josefin mx-auto space-y-5 p-14 text-center">
-        <div class="uppercase text-4xl font-semibold">Garden Party</div>
+        <div class="uppercase text-4xl font-semibold">Garden Party!</div>
         <div class="font-semibold">27th May 1pm-4pm</div>
         <div>
           Opening of the garden tours and activities, live music, vintage bazar,
