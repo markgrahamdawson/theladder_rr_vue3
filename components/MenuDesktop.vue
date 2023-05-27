@@ -17,7 +17,8 @@
           </button>
           <div
             class="absolute p-2 lg:p-3 w-[125px] lg:w-[175px] h-23 lg:h-32 bg-white flex flex-col space-y-2"
-            :class="showAbout ? 'hidden' : ''"
+            v-if="showAbout"
+            ref="target"
           >
             <NuxtLink
               to="/about/"
@@ -51,5 +52,15 @@
 </template>
 
 <script lang="ts" setup>
-const showAbout = ref(true);
+import { onClickOutside } from "@vueuse/core";
+
+const target = ref(null);
+
+const showAbout = ref(false);
+
+function closeModal() {
+  showAbout.value = false;
+}
+
+onClickOutside(target, (event) => closeModal());
 </script>
