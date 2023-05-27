@@ -14,14 +14,14 @@
         <div class="font-josan text-l font-semibold py-2">
           We have six studio spaces available to rent on our ground level, with
           some overlooking our beautiful garden and within spitting distance
-          (not quite latte slurping distance) of Beats and Roots Cafe. If you're
-          interested in renting a studio, please fill in the enquiry below.
+          (not quite latte slurping distance) of Beats and Roots Cafe.
+          <!-- If you're interested in renting a studio, please fill in the enquiry below. -->
         </div>
-        <button
-          class="bg-orange text-white font-semibold rounded-md px-10 py-3 uppercase"
+        <!-- <button
+          class="bg-orange text-white font-semibold rounded-md px-10 py-3 uppercase uppercase font-josan"
         >
-          FILL OUT THE FORM
-        </button>
+          Fill out the form
+        </button> -->
       </div>
     </div>
     <!-- Right Col -->
