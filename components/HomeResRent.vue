@@ -7,10 +7,10 @@
     >
       <div class="text-white text-3xl">Artists residency</div>
       <div class="w-3/4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
-        veritatis dolorem adipisci, numquam facere! Itaque dolorem neque earum
-        ut, sint assumenda, nihil corporis, temporibus sed laborum repellendus
-        dolorum rerum.
+        The Ladder is a hub for creativity and offered residency space for
+        performing arts organizations to get social-engaged projects off the
+        ground. We can offer a month of space, support, and a welcoming host
+        community as well as £5,000 for you project.
       </div>
       <NuxtLink :to="{ name: 'ourSpace' }" class="flex space-x-4">
         <div>Check it out</div>
@@ -30,10 +30,9 @@
     >
       <div class="text-white text-3xl">Rent a practise room</div>
       <div class="w-3/4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
-        veritatis dolorem adipisci, numquam facere! Itaque dolorem neque earum
-        ut, sint assumenda, nihil corporis, temporibus sed laborum repellendus
-        dolorum rerum.
+        We have six studio spaces available to rent on our ground level, with
+        some overlooking our beautiful garden and within spitting distance (not
+        quite latte slurping distance) of Beats and Roots Cafe.
       </div>
       <NuxtLink :to="{ name: 'ourSpace' }" class="flex space-x-4"
         ><div>Check it out</div>
