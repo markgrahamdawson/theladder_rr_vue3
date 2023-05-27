@@ -10,7 +10,7 @@
       <div class="font-semibold font-josefin">
         We are building a creative space for Redruth and Cornwall. This will
         include space for creatives to work including studios and co-working but
-        also for community events and activities including fance classes,
+        also for community events and activities including dance classes,
         children and young people activities, fitness and music. Every two years
         all our residents will come together as part of a festival.
       </div>

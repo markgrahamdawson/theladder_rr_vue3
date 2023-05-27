@@ -1,12 +1,12 @@
 <template>
   <nav class="bg-white px-8 py-3 md:px-20">
     <div class="flex w-full">
-      <div class="w-1/3">
+      <div class="w-1/3 justify-center items-center flex">
         <NuxtLink to="/" class="flex items-center">
           <img
             src="~/assets/headerlogo.svg"
             alt="The Ladder Logo"
-            class="object-cover h-42 w-56 px-4"
+            class="object-cover h-42 w-56 md:px-4"
           />
         </NuxtLink>
       </div>
