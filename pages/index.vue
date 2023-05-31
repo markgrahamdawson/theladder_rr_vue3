@@ -6,7 +6,7 @@
     <HomeResRent class="py-5" />
     <HomeCafe class="py-5" />
     <!-- <HomeResidentsComponent :blok="story.content.body[1]"/> -->
-    <!-- <HomeMailingList class="py-5" /> -->
+    <HomeMailingList class="py-5" />
     <HomeUpEvents class="py-5" />
     <HomeNursery class="py-5" />
   </div>
