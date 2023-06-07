@@ -65,6 +65,7 @@
                   name: 'newsarticles-slug',
                   params: { slug: contentItem.slug },
                 }"
+                no-rel
                 class="absolute bottom-2 flex space-x-3"
               >
                 <div>read more</div>

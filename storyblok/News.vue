@@ -1,4 +1,5 @@
 <template>
+  <Hero :text="`News`" />
   <div class="mx-auto sm:block max-w-7xl px-2 sm:px-6 lg:px-8">
     <div v-editable="blok" class="md:p-6 w-full">
       <div class="pt-8 font-josan">
@@ -10,6 +11,13 @@
           class="relative flex justify-center w-full sm:px-16 px-10 lg:px-32"
         >
           <div class="relative w-full">
+            <div class="flex">
+              <IconsChevronLeft /><NuxtLink
+                to="/news"
+                class="font-josan ml-2 pb-8 font-semibold text-lg"
+                >Back to news</NuxtLink
+              >
+            </div>
             <div class="text-lg text-gray-500 text-blumine mt-2 mt-auto">
               {{
                 new Date(blok.date).toLocaleDateString("en-GB", {
