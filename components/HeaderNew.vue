@@ -1,78 +1,21 @@
 <template>
   <nav class="bg-white px-8 py-3 md:px-20">
     <div class="flex w-full">
-      <div class="w-1/3">
+      <div class="w-1/3 justify-center items-center flex">
         <NuxtLink to="/" class="flex items-center">
           <img
             src="~/assets/headerlogo.svg"
             alt="The Ladder Logo"
-            class="object-cover h-42 w-56 px-4"
+            class="object-cover h-42 w-56 md:px-4"
           />
         </NuxtLink>
       </div>
-      <!-- Desktop Menu -->
-      <div class="w-2/3 block hidden sm:block">
-        <div class="flex flex-col justify-end h-full pl-20">
-          <div
-            class="flex text-1xl lg:text-2xl font-josan font-bold justify-between font-semibold text-black uppercase"
-          >
-            <!-- <NuxtLink to="/about" class="hover:text-gray-300 relative"
-              >About
-            </NuxtLink> -->
-            <!-- <div class="absolute w-10 h-10 bg-white"></div> -->
-            <div class="relative">
-              <button
-                class="hover:text-gray-300 relative uppercase"
-                @click="showAbout = !showAbout"
-              >
-                About
-              </button>
-              <div
-                class="absolute p-2 lg:p-3 w-[125px] lg:w-[175px] h-23 lg:h-32 bg-white flex flex-col space-y-2"
-                :class="showAbout ? 'hidden' : ''"
-              >
-                <NuxtLink
-                  to="/about/"
-                  class="hover:text-gray-300"
-                  @click="showAbout = !showAbout"
-                  >About</NuxtLink
-                >
-                <NuxtLink
-                  to="/about/history/"
-                  class="hover:text-gray-300"
-                  @click="showAbout = !showAbout"
-                  >History</NuxtLink
-                >
-                <NuxtLink
-                  to="/about/directory"
-                  class="hover:text-gray-300"
-                  @click="showAbout = !showAbout"
-                  >Directory</NuxtLink
-                >
-              </div>
-            </div>
 
-            <NuxtLink to="/news" class="hover:text-gray-300">News </NuxtLink>
-            <NuxtLink to="/events" class="hover:text-gray-300"
-              >Events
-            </NuxtLink>
-            <NuxtLink to="/ourSpace" class="hover:text-gray-300"
-              >Our Space
-            </NuxtLink>
-          </div>
-        </div>
-      </div>
+      <!-- Desktop Menu -->
+      <MenuDesktop />
+
       <!-- Mobile Hanburger -->
-      <div class="w-2/3 sm:hidden flex justify-end">
-        <button
-          type="button"
-          class="text-black-400"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
-          <IconsHamburger class="w-20 h-20" />
-        </button>
-      </div>
+      <MenuMobile />
       <!-- Mobile menu, show/hide based on menu state. -->
       <!-- <div class="sm:hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3">
@@ -151,8 +94,6 @@
 
 <script lang="ts" setup>
 import { signOutUser } from "../composables/useFirebase";
-
-const showAbout = ref(true);
 
 // definePageMeta({
 //   middleware: ["auth"]

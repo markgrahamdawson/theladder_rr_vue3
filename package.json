@@ -16,6 +16,9 @@
   },
   "dependencies": {
     "@storyblok/nuxt": "^4.4.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "@vueuse/core": "^10.1.2",
+    "dayjs": "^1.11.7",
     "firebase": "^9.6.8"
   }
 }

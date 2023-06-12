@@ -3,7 +3,7 @@
     <!-- left box -->
     <div class="relative md:w-1/2 m-auto flex-col">
       <img
-        src="~/assets/ourStory.png"
+        src="~/assets/ourStorySmall.jpg"
         alt="Leonora and Live standing in front of The Ladder Logo"
       />
 

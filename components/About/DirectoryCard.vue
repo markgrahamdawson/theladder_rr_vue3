@@ -21,15 +21,21 @@
           <div v-if="props.email">Email: {{ props.email }}</div>
           <div v-if="props.website.url">Web: {{ props.website.url }}</div>
         </div>
-        <div class="space-y-4 md:w-1/2">
+        <div class="md:pl-8 space-x-4 md:w-1/2 flex">
           <div v-if="props.facebook.url" class="flex">
-            <IconsFacebook class="mr-2" /> {{ props.facebook.url }}
+            <a :href="props.facebook.url"
+              ><IconsFacebook class="h-7 w-7 mr-2"
+            /></a>
           </div>
           <div v-if="props.instagram.url" class="flex">
-            <IconsInstagram class="mr-2" /> {{ props.instagram.url }}
+            <a :href="props.instagram.url"
+              ><IconsInstagram class="h-7 w-7 mr-2"
+            /></a>
           </div>
           <div v-if="props.twitter.url" class="flex">
-            <IconsTwitter class="mr-2" /> {{ props.twitter.url }}
+            <a :href="props.twitter.url"
+              ><IconsTwitter class="h-7 w-7 mr-2"
+            /></a>
           </div>
         </div>
       </div>
