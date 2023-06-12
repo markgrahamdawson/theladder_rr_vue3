@@ -3,10 +3,10 @@
     class="md:flex shadow-[rgba(0,0,0,.3)_5px_5px_10px] bg-white rounded-lg overflow-hidden"
   >
     <!-- left side  -->
-    <div class="w-full md:w-1/3">
+    <div class="w-full md:w-1/3 grayscale">
       <!-- <img class="object-cover md:h-full" :src="useAsset(image)" /> -->
       <img
-        :src="image + '/m/400x0'"
+        :src="image + '/m/800x0'"
         :alt="imagealt"
         className="clip-your-needful-style"
         class="h-full object-cover"
@@ -15,17 +15,23 @@
 
     <!-- Right Side (Content) -->
     <div
-      class="w-full md:w-2/3 h-full py-14 px-16 space-y-10 text-left font-josefin text-black"
+      class="w-full md:w-2/3 h-full py-14 px-5 md:px-16 space-y-6 text-left font-josefin text-black"
     >
-      <div class="text-2xl text-gray-500 italic">{{ date }}</div>
-      <div class="text-4xl font-bold">{{ title }}</div>
+      <div class="md:text-2xl text-gray-500 italic">{{ date }}</div>
+      <div class="text-xlmd:text-4xl font-bold">{{ title }}</div>
 
-      <div class="flex space-x-2">
+      <div
+        class="flex flex-col md:flex-row space-y-2 md:space-x-2 md:space-y-0"
+      >
         <div
-          v-for="topic in topics"
-          :class="`bg-${topic.color} text-white text-center px-3 py-2 uppercase w-fit rounded-tl-xl`"
+          class="bg-teal text-white text-center px-3 py-2 uppercase w-fit rounded-tl-xl text-sm"
         >
-          {{ topic.text }}
+          {{ tags[0] }}
+        </div>
+        <div
+          class="bg-orange text-white text-center px-3 py-2 uppercase w-fit rounded-tl-xl text-sm"
+        >
+          {{ tags[1] }}
         </div>
       </div>
 
@@ -87,9 +93,13 @@ const props = defineProps({
     required: true,
   },
 
-  topics: {
+  // tags: {
+  //   required: true,
+  //   type: Array as PropType<Topic[]>,
+  // },
+  tags: {
+    type: Array,
     required: true,
-    type: Array as PropType<Topic[]>,
   },
 });
 </script>

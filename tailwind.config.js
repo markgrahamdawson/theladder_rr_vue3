@@ -17,7 +17,14 @@ module.exports = {
     }
   ],
   theme: {
-    extend: {
+    extend: {typography: ({theme}) => ({
+      DEFAULT: {
+        css: {
+          maxWidth: '2000px',
+          minHeight: '10px',
+        },
+      },
+    }),
       scale: {
         '-100': '-1',
       }
@@ -53,5 +60,6 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')]
+  ,
 }

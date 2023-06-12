@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok" class="w-full border space-y-10">
+  <div v-editable="blok" class="w-full space-y-10">
     <!-- {{ blok.news }} -->
     <div v-for="(news, index) in blok.news" :key="news._uid" class="font-josan">
       <ArticlePreview
@@ -9,10 +9,7 @@
         :content="news.content.summary"
         :image="news.content.thumbnail.filename"
         :imagealt="news.content.thumbnail.alt"
-        :topics="[
-          { text: 'History', color: 'teal' },
-          { text: 'Celebration', color: 'orange' },
-        ]"
+        :tags="news.content.tag"
         :slug="news.slug"
       />
     </div>

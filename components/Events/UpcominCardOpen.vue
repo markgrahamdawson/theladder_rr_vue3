@@ -1,8 +1,19 @@
 <template>
   <div class="w-full h-full md:flex">
     <div class="relative md:w-1/3 bg-black">
+      <div class="w-full h-2 md:h-3" :class="`bg-${oppositeColor}`"></div>
       <div
-        class="absolute w-full h-full z-40 opacity-50"
+        class="absolute top-0 right-0 z-30 w-full flex space-x-3 text-white font-josan uppercase text-sm md:text-md"
+      >
+        <div class="px-2 pt-2 pb-0 rounded-b-lg" :class="`bg-${oppositeColor}`">
+          {{ futureEvent.content.tag[0] }}
+        </div>
+        <div class="px-2 pt-2 pb-0 rounded-b-lg" :class="`bg-${oppositeColor}`">
+          {{ futureEvent.content.tag[1] }}
+        </div>
+      </div>
+      <div
+        class="absolute w-full h-full z-20 opacity-50"
         :class="`bg-${color}`"
       ></div>
       <img
@@ -19,8 +30,8 @@
           <div class="bg-teal p-2">{{ getTime(futureEvent.content.date) }}</div>
         </div>
         <div class="text-sm normal-case">{{ futureEvent.content.content }}</div>
-        <button class="bg-orange rounded-full p-2 uppercase text-xs">
-          book now
+        <button class="bg-orange rounded-full p-2 uppercase text-xs z-50">
+          <a :href="futureEvent.content.eventbright">book now</a>
         </button>
       </div>
     </div>
@@ -28,9 +39,17 @@
 </template>
 
 <script lang="ts" setup>
-defineProps({
+const props = defineProps({
   futureEvent: Object,
   color: String,
+});
+
+const oppositeColor = computed(() => {
+  if (props.color === "orange") {
+    return "teal";
+  } else {
+    return "orange";
+  }
 });
 
 function getDate(datetimeStr) {
