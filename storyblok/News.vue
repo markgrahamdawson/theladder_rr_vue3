@@ -1,6 +1,6 @@
 <template>
   <Hero :text="`News`" />
-  <div class="mx-auto sm:block max-w-7xl px-2 sm:px-6 lg:px-8">
+  <div class="mx-auto sm:block max-w-7xl px-0 sm:px-6 lg:px-8">
     <div v-editable="blok" class="md:p-6 w-full">
       <div class="pt-8 font-josan">
         <!-- <div class="flex ml-4">
