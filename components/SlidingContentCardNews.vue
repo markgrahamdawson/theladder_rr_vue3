@@ -79,7 +79,7 @@
         class="absolute right-0 md:bg-gradient-to-l from-white text-white h-full flex justify-center items-center w-32"
       >
         <div class="bg-black rounded-full h-10 w-10 flex justify-center ml-8">
-          <button
+          <button aria-label="next"
             class="bg-black rounded-full h-10 w-10 flex justify-center items-center"
             @click="incrementSlideIndex"
           >
