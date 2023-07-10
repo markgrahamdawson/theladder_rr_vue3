@@ -18,7 +18,7 @@
             music.
           </div>
           <div class="font-josan text-l font-light pt-8 relative">
-            <NuxtLink :to="{ name: 'about' }"> Read more </NuxtLink>
+            <NuxtLink :to="{ name: 'about' }"> Read more about our mission</NuxtLink>
             <IconsBuilding
               class="hidden md:block absolute h-40 w-40 right-0 -bottom-[130px]"
             />

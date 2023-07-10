@@ -68,7 +68,7 @@
                 no-rel
                 class="absolute bottom-2 flex space-x-3"
               >
-                <div>read more</div>
+                <div>read article</div>
                 <IconsArrow />
               </NuxtLink>
             </div>

@@ -16,7 +16,7 @@
             <button
               class="bg-orange text-white font-semibold rounded-md px-5 py-2 uppercase"
             >
-              More info
+              Event details
             </button>
           </a>
         </div>
