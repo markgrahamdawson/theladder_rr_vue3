@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col-reverse md:flex-row">
     <!-- left box -->
-    <div class="md:w-1/2 m-auto">
-      <img src="~/assets/Cafe.png" alt="Beets and Roots Cafe" />
+    <div class="md:w-1/2 my-auto">
+      <img class="w-full object-cover max-h-[400px]" src="~/assets/Cafe_lowres.png" alt="Beets and Roots Cafe" />
     </div>
     <!-- right box -->
     <div

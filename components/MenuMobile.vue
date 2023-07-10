@@ -4,6 +4,7 @@
       type="button"
       class="text-black-400"
       aria-controls="mobile-menu"
+      aria-label="mobile-menu"
       aria-expanded="false"
     >
       <IconsHamburger

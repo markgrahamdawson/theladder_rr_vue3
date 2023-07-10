@@ -2,8 +2,8 @@
   <div class="relative w-full md:flex font-josan">
     <!-- left -->
     <img
-      src="~/assets/nursery.png"
-      class="md:w-1/2 lg:-mr-[2.5px] object-cover object-center"
+      src="~/assets/nursery_lowres.png"
+      class="max-h-[400px] w-full md:w-1/2 lg:-mr-[2.5px] object-cover object-center"
       alt="Children rubbing their hands in paint."
     />
     <!-- right -->
