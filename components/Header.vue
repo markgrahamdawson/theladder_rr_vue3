@@ -69,7 +69,7 @@
               </div>
               <div class="flex space-x-2 pt-2">
                 <a class="hover:fill-gray-300" href="https://www.instagram.com/theladder_rr/"><IconsInstagram/></a>
-                <a class="hover:fill-gray-300" href=""><IconsFacebook/></a>
+                <a class="hover:fill-gray-300" href="https://www.facebook.com/RIFTstorieswithoutboundaries"><IconsFacebook/></a>
                 <a class="hover:fill-gray-300" href="https://mobile.twitter.com/riftexcursions"><IconsTwitter/></a>
               </div>
             </div>

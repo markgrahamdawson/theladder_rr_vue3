@@ -29,7 +29,7 @@
           href="https://www.instagram.com/theladder_rr/"
           ><IconsInstagram class="h-6 w-6 md:h-8 md:w-8"
         /></a>
-        <a class="hover:fill-gray-300" href=""
+        <a class="hover:fill-gray-300" href="https://www.facebook.com/RIFTstorieswithoutboundaries"
           ><IconsFacebook class="h-6 w-6 md:h-8 md:w-8"
         /></a>
         <a
