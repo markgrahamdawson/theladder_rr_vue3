@@ -24,9 +24,9 @@
     </div>
     <!-- Right Col -->
     <img
-      src="~/assets/eventsSmall.jpg"
-      class="h-[150px] md:h-auto md:w-2/3 object-cover object-center"
-      alt="Library Lobby with a man sitting at the front desk"
+      src="~/assets/eventsSmall_lowres.jpg"
+      class="h-[150px] md:h-auto md:w-2/3 object-cover object-center max-h-[400px]"
+      alt="Event in the Library outside area"
     />
   </div>
 </template>

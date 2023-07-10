@@ -29,9 +29,9 @@
     <!-- Right Col -->
     <div class="items-end justify-center">
       <img
-        src="~/assets/discussing.png"
+        src="~/assets/discussing_lowres.png"
         alt="Josh and Felix talking by the Redruth library window"
-        class="h-1/5 object-cover"
+        class="h-1/5 object-cover w-full max-h-[400px]"
       />
     </div>
   </div>
