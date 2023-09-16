@@ -12,9 +12,12 @@
       <div class="text-gray-400 text-l italic font-semibold">
         {{ jobTitle }}
       </div>
-      <div class="text-sm">
-        {{ description }}
+      <div class="h-1/2 overflow-y-scroll">
+        <div class="text-sm">
+          {{ description }}
+        </div>
       </div>
+
       <!-- svg -->
       <component
         :is="svgIcon"

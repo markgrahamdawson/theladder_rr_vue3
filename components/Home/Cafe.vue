@@ -9,21 +9,19 @@
       class="md:w-1/2 m-auto bg-offwhite font-josefin md:my-4 px-12 py-20 space-y-4 relative"
     >
       <div class="font-semibold text-4xl">
-        <h1>Beets and Roots</h1>
+        <h1>Beats and Roots Cafe</h1>
       </div>
       <div>
         <div class="font-semibold text-xl pb-2 uppercase">Now open</div>
         <div>
-          The cafe is a venture from Paul Leatherbarrow & Ben Read. Their
-          imaginative and delicious menu offers both vegetarian and vegan
-          options.
+          Situated in our courtyard garden Beats and Roots imaginative and delicious menu offers both vegetarian and vegan options.
         </div>
       </div>
       <div>
         <div class="font-semibold text-xl pb-2 uppercase">Opening times</div>
-        <div>Thursday 12-6</div>
-        <div>Friday 12-6</div>
-        <div>Saturday 12-6</div>
+        <div>Monday: Closed</div>
+        <div>Tuesday-Thursday: 9-3</div>
+        <div>Friday-Saturday: 11-7</div>
       </div>
       <IconsSquigles
         class="absolute h-44 w-44 lg:h-64 lg:w-64 right-0 -bottom-10"

@@ -28,11 +28,9 @@
     <div
       class="relative md:w-1/2 bg-[url('~/assets/rent.png')] bg-cover bg-no-repeat bg-center p-20 pb-0 space-y-1"
     >
-      <div class="text-white text-3xl">Rent a practise room</div>
+      <div class="text-white text-3xl">Spaces Available</div>
       <div class="w-3/4">
-        We have six studio spaces available to rent on our ground level, with
-        some overlooking our beautiful garden and within spitting distance (not
-        quite latte slurping distance) of Beats and Roots Cafe.
+        The Ladder will have spaces for studios, co-working, rehearsals, workshops and events, as well as a courtyard garden for markets and music. 
       </div>
       <NuxtLink :to="{ name: 'ourSpace' }" class="flex space-x-4"
         ><div>Check it out</div>
