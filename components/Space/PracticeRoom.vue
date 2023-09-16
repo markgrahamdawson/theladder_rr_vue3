@@ -8,14 +8,17 @@
     >
       <div class="w-full m-auto">
         <div class="title font-josefin font-semibold text-4xl title">
-          <h1>Rent a Practice Room</h1>
+          <h1>Rent a Studio</h1>
         </div>
 
         <div class="font-josan text-l font-semibold mt-12">
-          We have six studio spaces available to rent on our ground level, with
-          some overlooking our beautiful garden and within spitting distance
-          (not quite latte slurping distance) of Beats and Roots Cafe.
+          The Ladder will have spaces for studios, co-working, rehearsals, workshops and events, as well as a courtyard garden for markets and music. 
           <!-- If you're interested in renting a studio, please fill in the enquiry below. -->
+        </div>
+        <div class="font-josan text-l font-semibold mt-12">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScU8zPkiOxKZrBBYeH9CE10CPupk7LHmOLAcvK7FrL4PIpo5w/viewform?usp=send_form">
+            Get in touch
+          </a>
         </div>
         <!-- <button
           class="bg-orange text-white font-semibold rounded-md px-10 py-3 uppercase uppercase font-josan"
