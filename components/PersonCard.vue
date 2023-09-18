@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`h-[400px] relative border border-8 border-solid h-full w-full border flex items-end justify-center bg-cover bg-black bg-no-repeat 2xl:bg-contain bg-center border-${props.borderColor}`"
+    :class="`h-[380px] sm:h-[380px] lg:h-[420px] relative border border-8 border-solid h-full w-full border flex items-end justify-center bg-cover bg-black bg-no-repeat 2xl:bg-contain bg-center border-${props.borderColor}`"
     :style="{ backgroundImage: `url(${props.image})` }"
   >
     <!-- fade -->
@@ -21,7 +21,7 @@
       <!-- svg -->
       <component
         :is="svgIcon"
-        class="absolute bottom-[80px] fill-white h-2/3 w-2/3 transform xl:left-[200px]"
+        class="absolute bottom-[65px] fill-white h-2/3 w-2/3 transform xl:left-[200px]"
         :class="[
           name === 'Josh' || name === 'Liv'
             ? 'left-[130px] p-6'

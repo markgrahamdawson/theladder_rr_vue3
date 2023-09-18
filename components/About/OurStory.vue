@@ -2,11 +2,16 @@
   <div class="flex flex-col-reverse md:flex-row">
     <!-- left box -->
     <div class="relative md:w-1/2 m-auto flex-col">
-      <img
+      <!-- <img
         src="~/assets/ourStorySmall.jpg"
         alt="Leonora and Live standing in front of The Ladder Logo"
-      />
-
+      /> -->
+      <nuxt-img 
+        quality="100"
+        format="webp"
+        sizes="1000px" 
+        src="/assets/images/ourStorySmall.jpg"
+        alt="Leonora and Live standing in front of The Ladder Logo"/>
       <IconsSquigles
         class="absolute fill-teal rotate-90 h-40 w-40 xl:h-60 xl:w-60 -bottom-[20px] -left-[10px] sm:-bottom-[20px] sm:left-[10px]"
       />

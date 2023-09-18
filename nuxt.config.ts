@@ -75,9 +75,10 @@ export default defineNuxtConfig({
   },
   ssr: true,
   css: ["@/assets/css/styles.css"],
-  build: {
-    postcss: {
-      postcssOptions: require("./postcss.config.js"),
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
   buildModules: [
@@ -100,7 +101,14 @@ export default defineNuxtConfig({
   },
   modules: [
     ["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_API_KEY }],
+      "@nuxt/image-edge",
   ],
+  // image: {
+  //   provider: 'storyblok', 
+  //   storyblok:{
+  //     baseURL:'https://a.storyblok.com/'
+  //   }
+  // },
   plugins: [{ src: "~/plugins/firebaseAuth", ssr: false, mode: "client" }],
   // googleFonts: {
   //   families: {

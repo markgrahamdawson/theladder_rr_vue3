@@ -28,11 +28,12 @@
     </div>
     <!-- Right Col -->
     <div class="items-end justify-center">
-      <img
-        src="~/assets/discussing_lowres.png"
+      <nuxt-img 
+        quality="50"
+        format="webp" 
+        src="/assets/images/discussing.png"
         alt="Josh and Felix talking by the Redruth library window"
-        class="h-1/5 object-cover w-full max-h-[400px]"
-      />
+        class="h-1/5 object-cover w-full max-h-[400px]"/>
     </div>
   </div>
 </template>
