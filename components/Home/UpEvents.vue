@@ -26,7 +26,7 @@
     <nuxt-img 
         quality="80"
         format="webp" 
-        src="/assets/images/aGirl.jpg"
+        src="https://a.storyblok.com/f/181301/1280x720/3a5ee0b7fa/agirl.jpg"
         alt="Still from movie"
         class="h-[150px] md:h-auto md:w-2/3 object-cover object-center max-h-[400px] md:m-auto"/>
   </div>

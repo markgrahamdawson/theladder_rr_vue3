@@ -10,7 +10,7 @@
   <nuxt-img 
   quality="100"
   format="webp" 
-  src="/assets/images/Home_Hero.jpg"
+  src="https://a.storyblok.com/f/181301/2400x822/3ddb817d6f/home_hero.jpeg"
   class="w-full md:h-[350px] lg:h-[350px] xl:h-[450px]  object-cover md:object-center	xl:object-bottom"
 
   />

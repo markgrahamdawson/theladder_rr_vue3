@@ -24,7 +24,7 @@
     <nuxt-img 
         quality="80"
         format="webp"
-        src="/assets/images/libraryOutside.png"
+        src="https://a.storyblok.com/f/181301/1170x809/dc785df3a0/libraryoutside.png"
         alt="A picture of the library taken from outside"
         class="object-cover md:w-2/3"/>
     <IconsDrops

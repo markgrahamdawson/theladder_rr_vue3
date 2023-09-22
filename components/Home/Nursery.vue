@@ -4,7 +4,7 @@
     <nuxt-img 
         quality="80"
         format="webp" 
-        src="/assets/images/nursery_lowres.png"
+        src="https://a.storyblok.com/f/181301/482x405/fc497d63e9/nursery_lowres.png"
         alt="Children rubbing their hands in paint."
         class="max-h-[400px] w-full md:w-1/2 lg:-mr-[2.5px] object-cover object-center"/>
     <!-- right -->

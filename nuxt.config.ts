@@ -103,12 +103,12 @@ export default defineNuxtConfig({
     ["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_API_KEY }],
       "@nuxt/image-edge",
   ],
-  // image: {
-  //   provider: 'storyblok', 
-  //   storyblok:{
-  //     baseURL:'https://a.storyblok.com/'
-  //   }
-  // },
+  image: {
+    provider: 'storyblok', 
+    storyblok:{
+      baseURL:'https://a.storyblok.com/'
+    }  
+  },
   plugins: [{ src: "~/plugins/firebaseAuth", ssr: false, mode: "client" }],
   // googleFonts: {
   //   families: {

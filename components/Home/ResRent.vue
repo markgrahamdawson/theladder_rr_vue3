@@ -32,7 +32,7 @@
       <nuxt-img 
         quality="80"
         format="webp" 
-        src="/assets/images/residency.png"
+        src="https://a.storyblok.com/f/181301/4000x3509/f40700b4ba/residency.png"
         alt=""
         sizes="md:500px lg:600px xl:700px"
         class="w-full h-full w-full" />
@@ -63,7 +63,7 @@
       <nuxt-img 
         quality="80"
         format="webp" 
-        src="/assets/images/rent.png"
+        src="https://a.storyblok.com/f/181301/2051x1825/5b02f9d52c/rent.png"
         alt=""
         class="w-full h-full w-full" />
     </div>

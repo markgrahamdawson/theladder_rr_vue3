@@ -10,7 +10,7 @@
         quality="100"
         format="webp"
         sizes="1000px" 
-        src="/assets/images/ourStorySmall.jpg"
+        src="https://a.storyblok.com/f/181301/4599x3432/9af902e2f3/ourstorysmall.jpg"
         alt="Leonora and Live standing in front of The Ladder Logo"/>
       <IconsSquigles
         class="absolute fill-teal rotate-90 h-40 w-40 xl:h-60 xl:w-60 -bottom-[20px] -left-[10px] sm:-bottom-[20px] sm:left-[10px]"
