@@ -1,11 +1,12 @@
 <template>
   <div class="relative w-full md:flex font-josan">
     <!-- left -->
-    <img
-      src="~/assets/nursery_lowres.png"
-      class="max-h-[400px] w-full md:w-1/2 lg:-mr-[2.5px] object-cover object-center"
-      alt="Children rubbing their hands in paint."
-    />
+    <nuxt-img 
+        quality="80"
+        format="webp" 
+        src="https://a.storyblok.com/f/181301/482x405/fc497d63e9/nursery_lowres.png"
+        alt="Children rubbing their hands in paint."
+        class="max-h-[400px] w-full md:w-1/2 lg:-mr-[2.5px] object-cover object-center"/>
     <!-- right -->
     <div class="relative md:w-1/2 bg-teal md:my-4 flex flex-col justify-center">
       <div class="text-white text-center p-14 pt-20 space-y-10">
