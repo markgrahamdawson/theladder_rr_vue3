@@ -73,7 +73,7 @@ export default defineNuxtConfig({
       // ],
     },
   },
-  ssr: true,
+  ssr: false,
   css: ["@/assets/css/styles.css"],
   postcss: {
     plugins: {
