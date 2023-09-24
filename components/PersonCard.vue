@@ -1,18 +1,18 @@
 <template>
   <div
-    :class="`h-[380px] sm:h-[380px] lg:h-[420px] relative border border-8 border-solid h-full w-full border flex items-end justify-center bg-cover bg-black bg-no-repeat 2xl:bg-contain bg-center border-${props.borderColor}`"
+    :class="`flex flex-col justify-end items-end h-[500px] relative border border-8 border-solid w-full border bg-cover bg-black bg-no-repeat 2xl:bg-contain bg-center border-${props.borderColor}`"
     :style="{ backgroundImage: `url(${props.image})` }"
-  >
+    >
     <!-- fade -->
     <div
-      class="relative h-1/3 w-full text-white font-josefin p-2 bg-gradient-to-t from-[black_80%] to-transparent z-20 opacity-[.85]"
+      class="relative w-full text-white font-josefin p-2 bg-gradient-to-t from-[black_80%] to-transparent z-20 opacity-[.85]"
     >
       <!-- text -->
       <div class="font-semibold text-xl uppercase">{{ name }}</div>
       <div class="text-gray-400 text-l italic font-semibold">
         {{ jobTitle }}
       </div>
-      <div class="h-1/2 overflow-y-scroll">
+      <div class="h-full">
         <div class="text-sm">
           {{ description }}
         </div>
@@ -21,11 +21,15 @@
       <!-- svg -->
       <component
         :is="svgIcon"
-        class="absolute bottom-[65px] fill-white h-2/3 w-2/3 transform xl:left-[200px]"
+        class="absolute fill-white h-2/3 w-2/3 transform 2xl:left-[250px] xl:bottom-[100px] opacity-[.75]"
         :class="[
-          name === 'Josh' || name === 'Liv'
-            ? 'left-[130px] p-6'
+          name === 'Josh' || name === 'Liv' || name == 'Grace'
+            ? 'left-[130px] p-5'
             : 'left-[130px]',
+          name === 'Felix' || name == 'Andy'
+          ? 'bottom-[150px]' : 'bottom-[125px]',
+          name === 'Grace'
+          ? 'left-[130px] py-0' : ''
         ]"
       />
     </div>
