@@ -5,7 +5,7 @@
     <!-- <div
       class="relative md:w-1/2 bg-[url('~/assets/residency.png')] bg-cover bg-no-repeat bg-center p-20 pb-0 space-y-1"
     > -->
-    <div class="relative md:w-1/2 border h-[650px] md:h-auto">
+    <!-- <div class="relative md:w-1/2 border h-[650px] md:h-auto">
 
       <div class="absolute centered h-full w-full p-20 pb-0 space-y-1">
 
@@ -36,12 +36,12 @@
         alt=""
         sizes="md:500px lg:600px xl:700px"
         class="w-full h-full w-full" />
-    </div>
+    </div> -->
     <!-- </div> -->
     <!-- <div
       class="relative md:w-1/2 bg-[url('~/assets/rent.png')] bg-cover bg-no-repeat bg-center p-20 pb-0 space-y-1"
     > -->
-    <div class="relative md:w-1/2 border h-[650px] md:h-auto">
+    <div class="relative md:w-full border h-[650px] md:h-auto">
       <div class="absolute centered h-full w-full p-20 pb-0 space-y-1">
         <div class="text-white text-3xl">Spaces Available</div>
         <div class="w-3/4">
@@ -60,12 +60,14 @@
           class="absolute bottom-0 right-16 max-[905px]:hidden md: fill-white h-48 w-48 transform -scale-x-100"
         />
       </div>
-      <nuxt-img 
-        quality="80"
-        format="webp" 
+      <nuxt-img
+        fit="in"
+        quality="100"
+        format="webp"
+        provider="storyblok"
         src="https://a.storyblok.com/f/181301/2051x1825/5b02f9d52c/rent.png"
         alt=""
-        class="w-full h-full w-full" />
+        class="w-full h-full" />
     </div>
   </div>
   <!-- </div> -->

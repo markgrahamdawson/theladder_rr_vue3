@@ -29,7 +29,10 @@
           <div class="bg-teal p-2">{{ getDate(futureEvent.content.date) }}</div>
           <div class="bg-teal p-2">{{ getTime(futureEvent.content.date) }}</div>
         </div>
-        <div class="text-sm normal-case">{{ futureEvent.content.content }}</div>
+        <div
+          v-html="eventContent"
+          class="prose text-sm normal-case text-white"
+        ></div>
         <button class="bg-orange rounded-full p-2 uppercase text-xs z-50">
           <a :href="futureEvent.content.eventbright">book now</a>
         </button>
@@ -51,7 +54,7 @@ const oppositeColor = computed(() => {
     return "orange";
   }
 });
-
+const eventContent = computed(() => renderRichText(props.futureEvent.content.content));
 function getDate(datetimeStr) {
   // Create a new Date object from the datetime string
   var dateObj = new Date(datetimeStr);
