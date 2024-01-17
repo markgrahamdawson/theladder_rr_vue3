@@ -41,7 +41,7 @@ export default defineNuxtConfig({
           hid: "og:description",
           property: "og:description",
           content:
-            "Order your sturdy boxes online, pack them up, and we’ll collect them from your door.",
+            "The Ladder arts and culture hub in Redruth.",
         },
         {
           hid: "og:image",
