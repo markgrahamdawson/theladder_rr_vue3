@@ -36,6 +36,9 @@
         <div class="w-full px-16">
           {{ blok.content || "Lorem Ipsum" }}
         </div>
+        <div>
+          {{ eventContent }}
+        </div>
       </div>
     </div>
   </div>
@@ -47,6 +50,8 @@ import { getFirestore, getDocs, where, collection, query, addDoc, onSnapshot } f
 const props = defineProps({
   blok: { type: Object, required: true }
 })
+
+const eventContent = computed(() => renderRichText(props.blok.content));
 
 // Auth stuff
 const firebaseUser = useFirebaseUser();

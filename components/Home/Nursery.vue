@@ -13,7 +13,8 @@
         <div class="text-3xl">Want to Check Out the Nursery?</div>
         <div>
           <a
-            href="https://www.raisedin.org.uk/raised-in-cornwall-at-the-ladder"
+            href="https://www.naturallylearning.co.uk/"
+            target="_blank"
           >
             <button
               class="bg-orange text-white font-semibold rounded-md px-14 py-2"
@@ -24,8 +25,7 @@
         </div>
 
         <div>
-          Raised in are all about supporting community hubs whilst at the same
-          time, delivering the highest quality childcare.
+          Naturally Learning offer an early years' experience with the magic of childhood at its heart. Naturally Learning is a place to make meaningful memories, connect with nature and learn skills for life.
         </div>
       </div>
       <!-- top right svg -->

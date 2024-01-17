@@ -15,13 +15,14 @@
     </div>
     <!-- Right Col -->
     <div class="bg-offwhite md:w-1/2 text-left px-10 md:px-20 py-20 font-josan">
-      <h1 class="text-4xl font-semibold">Artist Residency</h1>
+      <h1 class="text-4xl font-semibold">Coming next year:</h1>
       <div class="font-semibold mt-12">
-        The Ladder is a hub for creativity and offered residency space for
+        Co-Working and Rehearsal Spaces
+        <!-- The Ladder is a hub for creativity and offered residency space for
         performing arts organizations to get social-engaged projects off the
         ground. We can offer a month of space, support, and a welcoming host
         community as well as £5,000 for you project.
-        <!-- Please fill out the enquiry from below if you or your company are interested and we will arrange on online meeting. -->
+        Please fill out the enquiry from below if you or your company are interested and we will arrange on online meeting. -->
       </div>
       <!-- 
       <button

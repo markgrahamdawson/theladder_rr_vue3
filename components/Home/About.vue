@@ -12,10 +12,9 @@
             We are building a creative space for Redruth and Cornwall.
           </div> -->
           <div class="font-josan text-l font-light py-2">
-            At the beginning of the pandemic Redruth Library, an imposing granite building in the centre of the town, closed its doors for the last time. Hoardings went up. Kids threw stones at where they were once read bedtime stories. The roof caved into the space where Cornwall’s historic archives were stored, plaster and mould splattered over a bust of Cornwall’s most famous philanthropist Passmore Edwards. 
+            The Ladder, is a new arts and culture hub in Redruth. The Ladder is housed in the former Passmore Edwards Library Building in Redruth which is undergoing extensive renovation to fully resource the space to provide rehearsal, performance, co-working and residency space for artists.
           </div>
           <div class="font-josan text-l font-light py-2">
-            We’re now renovating this historic building into The Ladder: Redruth’s Future Creative Hub. This will include space for creatives to work including studios and co-working but also for community events and activities including dance classes, children and young people activities, fitness and music.
           </div>
           <div class="font-josan text-l font-light pt-8 relative">
             <NuxtLink :to="{ name: 'about' }"> Read more about our mission</NuxtLink>
@@ -31,7 +30,7 @@
       <nuxt-img 
         quality="50"
         format="webp" 
-        src="https://a.storyblok.com/f/181301/2471x1452/fc6bb5fc3a/discussing.png"
+        src="https://a.storyblok.com/f/181301/1310x1378/c386cb7b4b/snow.png"
         alt="Josh and Felix talking by the Redruth library window"
         class="h-1/5 object-cover w-full max-h-[400px]"/>
     </div>

@@ -7,8 +7,7 @@
         <div class="text-white text-center font-semibold space-y-5">
           <div class="text-3xl uppercase">Join our mailing list</div>
           <div>
-            Newsletter, Events, Updates, hear about everything on our mailing
-            list!
+            Sign up to our monthly newsletter for events, updates, news and more.
           </div>
         </div>
 
