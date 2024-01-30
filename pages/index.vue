@@ -7,13 +7,13 @@
     <HomeResRent class="py-5" />
     <HomeCafe class="py-5" />
     <!-- <HomeResidentsComponent :blok="story.content.body[1]"/> -->
-    <HomeUpEvents class="py-5" />
+    <HomeUpEvents :blok="story.content.body[2]" class="py-5" />
     <HomeNursery class="py-5" />
   </div>
 </template>
 
 <script lang="ts" setup>
-const resolveRelations = ["HomeNews.news", "HomeResidents.residents"];
+const resolveRelations = ["HomeNews.news", "HomeResidents.residents","HomeEvents.events"];
 
 const story = await useAsyncStoryblok(
   "home",
