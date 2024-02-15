@@ -9,6 +9,7 @@
     <!-- <HomeResidentsComponent :blok="story.content.body[1]"/> -->
     <HomeUpEvents :blok="story.content.body[2]" class="py-5" />
     <HomeNursery class="py-5" />
+    <HomeSponsors />
   </div>
 </template>
 
