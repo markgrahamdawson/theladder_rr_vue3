@@ -10,7 +10,7 @@
           <img :src="blok.thumbnail?.filename + '/m/400x0' || 'https://picsum.photos/300/175'" :alt="blok.image?.alt"
             class="" />
         </div>
-        <div class="px-16 pb-4 pt-8 font-semibold flex">
+        <div class="px-0 md:px-16  pb-4 pt-8 font-semibold flex">
           <div class="w-3/4 text-teal">
             {{ blok.date || "Date" }}
           </div>
@@ -27,17 +27,18 @@
             </div>
           </div> -->
         </div>
-        <div class="w-full px-16 py-2 font-permark ">
+        <div class="w-full px-0 md:px-16 py-2 font-permark ">
           {{ blok.performance || "Performance" }}
         </div>
-        <div class="w-full px-16 py-2">
+        <div class="w-full px-0 md:px-16 py-2">
           {{ blok.company || "Company" }}
         </div>
-        <div class="w-full px-16">
+        <!-- <div class="w-full px-16">
           {{ blok.content || "Lorem Ipsum" }}
-        </div>
-        <div>
-          {{ eventContent }}
+        </div> -->
+        <div 
+          v-html="eventContent" 
+          class="prose w-full px-0 md:px-16 m-auto">
         </div>
       </div>
     </div>
