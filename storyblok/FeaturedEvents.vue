@@ -1,14 +1,7 @@
 <template>
   <div v-editable="blok" class="md:p-6 w-full">
-    <!-- <div
-      v-for="(event, index) in futureEvents"
-      :key="event._uid"
-      class="md:p-8 font-josan mb-8"
-    >
-      event
-    </div> -->
-    <EventsUpcoming :futureEvents="futureEvents" />
-    <EventsPast :pastEvents="pastEvents" />
+    <EventsUpcoming v-if="futureEvents.length" :futureEvents="futureEvents" />
+    <EventsPast v-if="pastEvents.length" :pastEvents="pastEvents" />
   </div>
 </template>
 
@@ -16,7 +9,7 @@
 import EventsTiles from "~/components/EventsTiles.vue";
 
 const props = defineProps({
-  blok: Object,
+  blok: { type: Object, required: true }
 });
 
 const today = new Date();
