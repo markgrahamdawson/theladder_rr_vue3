@@ -5,7 +5,7 @@
         <div class="hover:bg-gray-100 grayscale hover:grayscale-0">
           <img 
             :src="image"
-            class="bg-cover"/>
+            class="object-cover lg:h-6 lg:w-full"/>
           <div>
             <div>{{ startTime }} - {{ endTime }}</div>
             <div>{{ name }}</div>    

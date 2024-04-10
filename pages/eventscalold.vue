@@ -1,6 +1,8 @@
 <template>
 <div class="p-12">
-  <EventsCalendar :modelValue="data.data"/>
+  <EventsCalendarMonth
+    :modelValue="data.data"
+    :display="'day'"/>
 </div>
 </template>
 

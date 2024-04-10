@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- {{ futureEvents }} -->
-    <div class="font-josan pb-4 text-xl">Upcoming Events</div>
+    <!-- <div class="font-josan pb-4 text-xl">Upcoming Events</div> -->
     <div
       class="h-full w-full grid grid-cols-1 sm:grid-cols-2 grid-rows-12 gap-2 md:gap-4 grid-flow-row-dense"
     >
