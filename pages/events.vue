@@ -2,7 +2,7 @@
   <div>
     <Hero :text="`Events`" />
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="min-h-screen p-16">
+      <div class="flex flex-col">
         <StoryblokComponent
           v-if="story"
           :blok="story.content"
