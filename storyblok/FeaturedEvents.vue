@@ -72,7 +72,6 @@ const updateScreenWidth = () => {
 };
 
 watch(day, (newValue, oldValue) => {
-  console.log(newValue.value)
   if(newValue){
     calendarView.value=false
   }
