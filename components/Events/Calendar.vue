@@ -54,6 +54,9 @@
       const startOfMonth = viewDate.value.startOf("month");
       const startOfFirstWeek = startOfMonth.startOf("week");
       const daysToFirstDay = startOfMonth.diff(startOfFirstWeek, "day");
+      if (daysToFirstDay===0) {
+        return 6
+      }
       return Array.from(new Array(daysToFirstDay).keys()).pop() ;
     } else {
       return 0
@@ -103,7 +106,6 @@
         }
       }
     });
-    console.log(dataStore)
     return dataStore
   }
 </script>

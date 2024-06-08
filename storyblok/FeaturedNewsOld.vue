@@ -70,7 +70,6 @@ const props = defineProps({
 const activeNewsIndex=ref(0)
 
 const setActiveNewsIndex = (index) => {
-  console.log(index)
   activeNewsIndex.value = index
 }
 
